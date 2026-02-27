@@ -319,7 +319,7 @@
 				.text( JSON.stringify( args['details'] ) );
 			jQuery( '<i class="dashicons dashicons-editor-help light"></i>' )
 				.prependTo( msg_box.find( 'p:first' ) )
-				.click( toggle_debug )
+				.on("click", toggle_debug )
 				.after( ' ' );
 		}
 
@@ -333,7 +333,7 @@
 				btn_close = jQuery( '<a href="#" class="notice-dismiss"></a>' );
 				btn_close.prependTo( msg_box );
 
-				btn_close.click( hide_message );
+				btn_close.on("click", hide_message );
 			}
 
 			if ( args['insert_after'] && parent.find( args['insert_after'] ).length ) {
@@ -429,7 +429,7 @@
 				.html( args['buttons'][ind] )
 				.addClass( primary_button ? 'button-primary' : 'button-secondary' )
 				.data( 'key', ind )
-				.click( handle_close )
+				.on("click", handle_close )
 				.prependTo( el_btn );
 			primary_button = false;
 		}
@@ -437,7 +437,7 @@
 		el_msg.appendTo( container );
 		el_btn.appendTo( container )
 			.find( '.button-primary' )
-			.focus();
+			.trigger('focus');
 
 		return true;
 	};
@@ -3166,7 +3166,7 @@
 					response = resp;
 					if ( 'json' === type ) {
 						try {
-							response = jQuery.parseJSON( resp );
+							response = JSON.parse( resp );
 						} catch(ignore) {
 							response = { 'status': 'ERR', 'data': resp };
 						}

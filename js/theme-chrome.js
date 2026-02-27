@@ -1,6 +1,6 @@
-/*! PopUp - v4.8.01
- * http://premium.wpmudev.org/project/the-pop-over-plugin/
- * Copyright (c) 2017; * Licensed GPLv2+ */
+/*! PopUp - v4.8.0
+ * https://n3rds.work/piestingtal-source-project/ps-popup/
+ * Copyright (c) 2016; * Licensed GPLv2+ */
 ace.define("ace/theme/chrome", ["require", "exports", "module", "ace/lib/dom"], function(require, exports, module) {
 
     exports.isDark = false;

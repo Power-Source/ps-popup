@@ -1,28 +1,27 @@
 <?php
-/*
-Name:        Custom Taxonomies
-Plugin URI:  http://premium.wpmudev.org/project/the-pop-over-plugin/
-Description: Allows you to show PopUps based on taxonomies other than post categories.
-Author:      Vinod Dalvi (Incsub)
-Author URI:  http://premium.wpmudev.org
-Type:        Rule
-Rules:       On post taxonomy, Not on post taxonomy
-Limit:       no global, pro
-Version:     1.0
 
-NOTE: DON'T RENAME THIS FILE!!
-This filename is saved as metadata with each popup that uses these rules.
-Renaming the file will DISABLE the rules, which is very bad!
+/*
+Name:        Benutzerdefinierte Taxonomien
+Plugin URI:  https://n3rds.work/piestingtal-source-project/ps-popup/
+Description: Ermöglicht das Anzeigen von PopUps basierend auf anderen Taxonomien als Beitragskategorien.
+Author:      DerN3rd (PSOURCE)
+Author URI:  https://n3rds.work
+Type:        Rule
+Rules:       Auf Beitragstaxonomie, Nicht auf Beitragstaxonomie
+Limit:       no global, pro
+Version:     1.1
+
+HINWEIS: DIESE DATEI NICHT UMBENENNEN!!
+Dieser Dateiname wird als Metadaten bei jedem Popup gespeichert, das diese Regeln verwendet.
+Durch das Umbenennen der Datei werden die Regeln deaktiviert, was sehr schlecht ist!
 */
 
-
 class IncPopupRule_Taxonomy extends IncPopupRule {
-
 
 	/**
 	 * Initialize the rule object.
 	 *
-	 * @since  4.6
+	 * @since  1.6
 	 */
 	protected function init() {
 		$this->filename = basename( __FILE__ );
@@ -31,7 +30,7 @@ class IncPopupRule_Taxonomy extends IncPopupRule {
 
 		if ( ! defined( 'POP_UP_TAXONOMY' ) ) {
 			lib3()->ui->admin_message(
-				__( 'Please define the PopUp taxonomy by adding <code>define("POP_UP_TAXONOMY", "<em>&lt;taxonomy_name&gt;</em>");</code> in your wpconfig.php file.<br>Note: Instead of "&lt;taxonomy_name&gt;" you need to define the exact taxonomy-name you want to use.', 'popover' ),
+				__( 'Bitte definiere die PopUp-Taxonomie durch hinzufügen von <code>define("POP_UP_TAXONOMY", "<em>&lt;taxonomy_name&gt;</em>");</code> in Deine wpconfig.php Datei.<br>Hinweis: Anstelle von "&lt;taxonomy_name&gt;" musst Du den genauen Taxonomienamen definieren, den Du verwenden möchtest.', 'popover' ),
 				'err'
 			);
 		}
@@ -39,29 +38,26 @@ class IncPopupRule_Taxonomy extends IncPopupRule {
 		// 'taxonomy' rule.
 		$this->add_rule(
 			'taxonomy',
-			__( 'On custom taxonomy', 'popover' ),
+			__( 'Auf benutzerdefinierter Taxonomie', 'popover' ),
 			sprintf(
-				__( 'Shows the PopUp on pages that match any of the specified <strong>%s</strong>-taxonomies.', 'popover' ),
+				__( 'Zeigt das PopUp auf Seiten an, die einer der angegebenen <strong>%s</strong>-Taxonomien entsprechen.', 'popover' ),
 				esc_html( POP_UP_TAXONOMY )
 			),
 			'no_taxonomy',
 			30
 		);
-
 		// 'no_taxonomy' rule.
 		$this->add_rule(
 			'no_taxonomy',
-			__( 'Not on custom taxonomy', 'popover' ),
+			__( 'Nicht auf benutzerdefinierte Taxonomie', 'popover' ),
 			sprintf(
-				__( 'Hides the PopUp on pages that match any of the specified <strong>%s</strong>-taxonomies.', 'popover' ),
+				__( 'Blendet das PopUp auf Seiten aus, die einer der angegebenen strong>%s</strong>-Taxonomien entsprechen.', 'popover' ),
 				esc_html( POP_UP_TAXONOMY )
 			),
 			'taxonomy',
 			30
 		);
-
 		// -- Initialize rule.
-
 		add_filter(
 			'popup-ajax-data',
 			array( $this, 'inject_ajax_taxonomy' )
@@ -77,7 +73,7 @@ class IncPopupRule_Taxonomy extends IncPopupRule {
 
 		$this->url_types = array(
 			'singular' => __( 'Singular', 'popover' ),
-			'plural'   => __( 'Archive', 'popover' ),
+			'plural'   => __( 'Archiv', 'popover' ),
 		);
 	}
 
@@ -85,8 +81,9 @@ class IncPopupRule_Taxonomy extends IncPopupRule {
 	 * Injects taxonomy details into the ajax-data collection.
 	 * (Required for any ajax loading method)
 	 *
-	 * @since  4.6
+	 * @since  1.6
 	 */
+
 	public function inject_ajax_taxonomy( $data ) {
 		global $post;
 		$taxonomies = '';
@@ -100,12 +97,12 @@ class IncPopupRule_Taxonomy extends IncPopupRule {
 		if ( ! is_array( @$data['ajax_data'] ) ) {
 			$data['ajax_data'] = array();
 		}
+
 		$data['ajax_data']['taxonomies'] = $taxonomies;
 		$data['ajax_data']['is_single'] = $is_singular;
 
 		return $data;
 	}
-
 
 	/*==============================*\
 	==================================
@@ -115,14 +112,14 @@ class IncPopupRule_Taxonomy extends IncPopupRule {
 	==================================
 	\*==============================*/
 
-
 	/**
 	 * Apply the rule-logic to the specified popup
 	 *
-	 * @since  4.6
+	 * @since  1.6
 	 * @param  mixed $data Rule-data which was saved via the save_() handler.
 	 * @return bool Decission to display popup or not.
 	 */
+
 	protected function apply_taxonomy( $data ) {
 		if ( ! is_array( $data ) ) { $data = array(); }
 
@@ -132,14 +129,15 @@ class IncPopupRule_Taxonomy extends IncPopupRule {
 	/**
 	 * Output the Admin-Form for the active rule.
 	 *
-	 * @since  4.6
+	 * @since  1.6
 	 * @param  mixed $data Rule-data which was saved via the save_() handler.
 	 */
+
 	protected function form_taxonomy( $data ) {
 		$this->render_form(
 			'taxonomy',
-			__( 'Show on these post taxonomies:', 'popover' ),
-			__( 'Show on these taxonomy type URLs:', 'popover' ),
+			__( 'Zeige auf diesen Beitrags-Taxonomien:', 'popover' ),
+			__( 'Zeige auf diesen Taxonomietyp-URLs an:', 'popover' ),
 			$data
 		);
 	}
@@ -147,15 +145,15 @@ class IncPopupRule_Taxonomy extends IncPopupRule {
 	/**
 	 * Update and return the $settings array to save the form values.
 	 *
-	 * @since  4.6
+	 * @since  1.6
 	 * @param  array $data The contents of $_POST['po_rule_data'].
 	 * @return mixed Data collection of this rule.
 	 */
+
 	protected function save_taxonomy( $data ) {
 		lib3()->array->equip( $data, 'taxonomy' );
 		return $data['taxonomy'];
 	}
-
 
 	/*=================================*\
 	=====================================
@@ -165,14 +163,14 @@ class IncPopupRule_Taxonomy extends IncPopupRule {
 	=====================================
 	\*=================================*/
 
-
 	/**
 	 * Apply the rule-logic to the specified popup
 	 *
-	 * @since  4.6
+	 * @since  1.6
 	 * @param  mixed $data Rule-data which was saved via the save_() handler.
 	 * @return bool Decission to display popup or not.
 	 */
+
 	protected function apply_no_taxonomy( $data ) {
 		if ( ! is_array( $data ) ) { $data = array(); }
 
@@ -182,14 +180,15 @@ class IncPopupRule_Taxonomy extends IncPopupRule {
 	/**
 	 * Output the Admin-Form for the active rule.
 	 *
-	 * @since  4.6
+	 * @since  1.6
 	 * @param  mixed $data Rule-data which was saved via the save_() handler.
 	 */
+
 	protected function form_no_taxonomy( $data ) {
 		$this->render_form(
 			'no_taxonomy',
-			__( 'Hide on these post taxonomies:', 'popover' ),
-			__( 'Hide on these taxonomy type URLs:', 'popover' ),
+			__( 'Verstecke auf diesen Beitrags-Taxonomien:', 'popover' ),
+			__( 'Verstecke auf diesen Taxonomietyp URLs:', 'popover' ),
 			$data
 		);
 	}
@@ -197,15 +196,15 @@ class IncPopupRule_Taxonomy extends IncPopupRule {
 	/**
 	 * Update and return the $settings array to save the form values.
 	 *
-	 * @since  4.6
+	 * @since  1.6
 	 * @param  array $data The contents of $_POST['po_rule_data'].
 	 * @return mixed Data collection of this rule.
 	 */
+
 	protected function save_no_taxonomy( $data ) {
 		lib3()->array->equip( $data, 'no_taxonomy' );
 		return $data['no_taxonomy'];
 	}
-
 
 	/*======================================*\
 	==========================================
@@ -214,7 +213,6 @@ class IncPopupRule_Taxonomy extends IncPopupRule {
 	==                                      ==
 	==========================================
 	\*======================================*/
-
 
 	/**
 	 * Renders the taxonomy options-form
@@ -225,11 +223,11 @@ class IncPopupRule_Taxonomy extends IncPopupRule {
 	 * @param  string $label_urls
 	 * @param  array $data
 	 */
+
 	protected function render_form( $name, $label_taxonomy, $label_urls, $data ) {
 		if ( ! is_array( $data ) ) { $data = array(); }
 		if ( ! is_array( @$data['taxonomies'] ) ) { $data['taxonomies'] = array(); }
 		if ( ! is_array( @$data['urls'] ) ) { $data['urls'] = array(); }
-
 		?>
 		<fieldset>
 			<legend><?php echo esc_html( $label_taxonomy ); ?></legend>
@@ -272,15 +270,17 @@ class IncPopupRule_Taxonomy extends IncPopupRule {
 	/**
 	 * Tests if the $test_url matches any pattern defined in the $list.
 	 *
-	 * @since  4.6
+	 * @since  1.6
 	 * @param  string $posttype
 	 * @param  array $url_types
 	 * @return bool
 	 */
+
 	protected function check_taxonomy( $taxonomies, $url_types ) {
 		global $post;
 
 		$response = false;
+
 		if ( ! is_array( $taxonomies ) ) { $taxonomies = array(); }
 		if ( ! is_array( $url_types ) ) { $url_types = array(); }
 
@@ -312,6 +312,7 @@ class IncPopupRule_Taxonomy extends IncPopupRule {
 					}
 				}
 			}
+
 		} else if ( ! $cur_single && in_array( 'plural', $url_types ) ) {
 			if ( empty( $taxonomies ) ) {
 				$response = true; // Any cat, archive
@@ -326,9 +327,9 @@ class IncPopupRule_Taxonomy extends IncPopupRule {
 				}
 			}
 		}
-
 		return $response;
 	}
 };
 
 IncPopupRules::register( 'IncPopupRule_Taxonomy' );
+

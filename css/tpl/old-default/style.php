@@ -1,3 +1,3 @@
-<?php
-$info->name = __( 'Default', 'popover' );
+<?php
+$info->name = __( 'Default', 'popover' );
 $info->deprecated = true;

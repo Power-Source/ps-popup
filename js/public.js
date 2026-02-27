@@ -1,6 +1,6 @@
-/*! PopUp - v4.8.01
- * http://premium.wpmudev.org/project/the-pop-over-plugin/
- * Copyright (c) 2017; * Licensed GPLv2+ */
+/*! PopUp - v4.8.0
+ * https://n3rds.work/piestingtal-source-project/ps-popup/
+ * Copyright (c) 2016; * Licensed GPLv2+ */
 /*global window:false */
 /*global document:false */
 /*global wpmUi:false */
@@ -290,9 +290,6 @@ window.IncPopup = function IncPopup( _options ) {
 			.on( 'click', '.wdpu-hide-forever', me.close_popup_forever )
 			.on( 'click', '.wdpu-close', me.close_popup )
 			.on( 'click', '.close', me.close_popup )
-			.on( 'click', '.wdpu-cta', me.cta_click )
-			.off( 'submit', 'form', me.form_submit ) //was missing
-			.on( 'submit', 'form', me.form_submit ) //was missing
 			.show()
 		;
 
@@ -301,8 +298,6 @@ window.IncPopup = function IncPopup( _options ) {
 		} else {
 			jQuery( 'html' ).addClass( 'no-scroll' );
 		}
-
-		jQuery( document ).trigger( 'popup-show', [ me ] );
 
 		return true;
 	};
@@ -328,8 +323,6 @@ window.IncPopup = function IncPopup( _options ) {
 	 * via the popup.extend object to customize behavior.
 	 */
 	me.cta_click = function cta_click() {
-		jQuery( document ).trigger( 'popup-cta-click', [ me ] );
-
 		// Default: do nothing.
 		return true;
 	};
@@ -553,7 +546,7 @@ window.IncPopup = function IncPopup( _options ) {
 			} else {
 				// E.g. Gravity Forms
 				me.data.did_ajax = false;
-				frame.load( process_document );
+				frame.on("load",  process_document );
 			}
 		}
 
