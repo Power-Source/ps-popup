@@ -195,7 +195,7 @@ class IncPopup extends IncPopupBase {
 			lib3()->ui->add( PO_CSS_URL . 'popup-admin.css' );
 			lib3()->ui->add( PO_JS_URL . 'popup-admin.js' );
 			lib3()->ui->add( PO_JS_URL . 'ace.js' ); // CSS editor.
-			lib3()->ui->add( PO_JS_URL . 'public.min.js' ); // For Preview.
+			lib3()->ui->add( PO_JS_URL . 'public.js' ); // For Preview - use unminified for debugging
 
 
 

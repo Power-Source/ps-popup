@@ -562,7 +562,7 @@ jQuery(function init_admin() {
 			if ( undefined === window.inc_popup ) { return false; }
 
 			body.addClass( 'wpmui-loading' );
-			window.inc_popup.on("load",  po_id );
+			window.inc_popup.load( po_id );
 			return false;
 		};
 
@@ -578,7 +578,7 @@ jQuery(function init_admin() {
 			data = ajax.extract_data( form );
 			body.addClass( 'wpmui-loading' );
 
-			window.inc_popup.on("load",  0, data );
+			window.inc_popup.load( 0, data );
 			return false;
 		};
 
