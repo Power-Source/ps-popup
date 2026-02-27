@@ -6,8 +6,8 @@ title: "PS PopUp"
 <h2 align="center" style="color:#38c2bb;">📚 PS PopUp</h2>
 
 <div class="menu">
-  <a href="https://github.com/cp-psource/ps-popup/discussions" style="color:#38c2bb;">💬 Forum</a>
-  <a href="https://github.com/cp-psource/ps-popup/releases" style="color:#38c2bb;">📝 Download</a>
+  <a href="https://github.com/Power-Source/ps-popup/discussions" style="color:#38c2bb;">💬 Forum</a>
+  <a href="https://github.com/Power-Source/ps-popup/releases" style="color:#38c2bb;">📝 Download</a>
 </div>
 
 Mehr als nur ein PopUp - Ein MarketingMaster! Popups einfach erstellen und wo, wann und wie Du es willst anzeigen lassen. Für jedes Szenarion ein passendes PopUp!
