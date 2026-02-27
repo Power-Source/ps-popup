@@ -563,7 +563,8 @@ abstract class IncPopupBase {
 
 			$path = PO_INC_DIR . 'rules/'. $rule;
 
-			if ( in_array( $rule, $settings['rules'] ) && file_exists( $path ) ) {
+			// Load all available rules, not just those in settings
+			if ( file_exists( $path ) ) {
 
 				include_once $path;
 

@@ -2027,7 +2027,7 @@ class IncPopup extends IncPopupBase {
 
 			IncPopupItem::POST_TYPE,
 
-			'normal',
+			'advanced',
 
 			'high'
 
@@ -2045,7 +2045,7 @@ class IncPopup extends IncPopupBase {
 
 			IncPopupItem::POST_TYPE,
 
-			'normal',
+			'advanced',
 
 			'high'
 

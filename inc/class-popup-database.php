@@ -1202,19 +1202,39 @@ class IncPopupDatabase {
 
 			'rules' => array(
 
+				'class-popup-rule-advurl.php',
+
 				'class-popup-rule-browser.php',
+
+				'class-popup-rule-category.php',
+
+				'class-popup-rule-datetime.php',
+
+				'class-popup-rule-events.php',
 
 				'class-popup-rule-geo.php',
 
 				'class-popup-rule-popup.php',
 
+				'class-popup-rule-posttype.php',
+
+				'class-popup-rule-prosite.php',
+
+				'class-popup-rule-protectedcontent.php',
+
 				'class-popup-rule-referrer.php',
+
+				'class-popup-rule-role.php',
+
+				'class-popup-rule-taxonomy.php',
 
 				'class-popup-rule-url.php',
 
 				'class-popup-rule-user.php',
 
-				'class-popup-rule-prosite.php',
+				'class-popup-rule-width.php',
+
+				'class-popup-rule-xprofile.php',
 
 			),
 

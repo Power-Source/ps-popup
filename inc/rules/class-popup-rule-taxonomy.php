@@ -29,10 +29,8 @@ class IncPopupRule_Taxonomy extends IncPopupRule {
 		if ( IncPopup::use_global() ) { return; }
 
 		if ( ! defined( 'POP_UP_TAXONOMY' ) ) {
-			lib3()->ui->admin_message(
-				__( 'Bitte definiere die PopUp-Taxonomie durch hinzufügen von <code>define("POP_UP_TAXONOMY", "<em>&lt;taxonomy_name&gt;</em>");</code> in Deine wpconfig.php Datei.<br>Hinweis: Anstelle von "&lt;taxonomy_name&gt;" musst Du den genauen Taxonomienamen definieren, den Du verwenden möchtest.', 'popover' ),
-				'err'
-			);
+			// Don't register the rule if the constant is not defined
+			return;
 		}
 
 		// 'taxonomy' rule.
