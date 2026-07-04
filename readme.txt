@@ -3,6 +3,7 @@ Contributors: DerN3rd (PSOURCE)
 Tags: widget, custom,post, wordpress, classicpress
 Requires at least: 4.9
 Tested up to: 6.8.1
+ClassicPress: 2.7.0
 Stable tag: 1.0.0
 Requires PHP: 7.0
 License: GPLv2 or later
@@ -17,8 +18,6 @@ Mehr als nur ein PopUp - Ein MarketingMaster! Popups einfach erstellen und wo, w
 <strong>Erstelle gezielte Marketingkampagnen, verhindere dass Kunden Deine Webseite verlassen, und erstelle Deine Mailingliste mit PS PopUp – es ist ein unglaublich einfach zu verwendendes und völlig kostenloses Popup-Plugin für WordPress.</strong>
 
 Verwende den WordPress-PopUp-Builder und erstelle wunderschöne Popups, ohne eine Codezeile zu berühren. Wähle Stil, Farbe und Position, wähle Deine Zielgruppe aus, bette Bilder und Anmeldeformulare ein und lege fest, wann Dein Popup erscheinen soll.
-
-[youtube https://www.youtube.com/watch?v=9PpIrpHLqIo]
 
 Erstelle eine unbegrenzte Anzahl von Popups mit unterschiedlichem Aussehen und unterschiedlichen Konfigurationen. Führe bis zu 3 verschiedene Popups gleichzeitig aus.
 
@@ -64,6 +63,10 @@ Wenn Du Deine Mailingliste aufbaust, den Umsatz steigerst oder eine Veranstaltun
 
 
 == ChangeLog ==
+
+= 1.0.1 =
+
+* Fix: Pointer-Polyfill hinzugefügt: JS/CSS für verbesserte Funktionalität und Styling aktualisiert
 
 = 1.0.0 =
 

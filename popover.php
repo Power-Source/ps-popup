@@ -2,11 +2,11 @@
 
 /**
  * Plugin Name: PS Popup
- * Plugin URI:  https://power-source.github.io/ps-popup/
+ * Plugin URI:  https://psource.eimen.net/wiki/ps-popup-dokumentation/
  * Description: Ermöglicht es Besuchern auf der ganzen Webseite ein ausgefallenes PopUp anzuzeigen. Eine *sehr* effektive Art, eine Mailingliste, ein Sonderangebot oder eine einfache alte Anzeige zu bewerben.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      PSOURCE
- * Author URI:  https://github.com/Power-Source
+ * Author URI:  https://psource.eimen.net/
  * Textdomain:  popover
  * Domain Path: lang
  */
@@ -14,7 +14,7 @@
 /**
  * Copyright notice
  *
- * @copyright PSOURCE (https://github.com/Power-Source)
+ * @copyright PSOURCE (https://psource.eimen.net/)
  *
  * Authors: PSOURCE
  *
