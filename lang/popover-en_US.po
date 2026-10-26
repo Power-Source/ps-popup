@@ -1,0 +1,2746 @@
+# Copyright (C) 2026 PSOURCE
+# This file is distributed under the same license as the PS Popup plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: PS Popup 1.0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/Power-Source/ps-popup/issues\n"
+"POT-Creation-Date: 2026-10-26 08:33+0000\n"
+"PO-Revision-Date: 2026-10-26 08:33+0000\n"
+"Last-Translator: PSOURCE\n"
+"Language: en_US\n"
+"Language-Team: English (United States)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#. Plugin Name of the plugin
+#: popover.php
+msgid "PS Popup"
+msgstr "PS Popup"
+
+#. Plugin URI of the plugin
+#: popover.php
+msgid "https://psource.eimen.net/psource/ps-popup/"
+msgstr "https://psource.eimen.net/psource/ps-popup/"
+
+#. Description of the plugin
+#: popover.php
+msgid ""
+"Ermöglicht es Besuchern auf der ganzen Webseite ein ausgefallenes PopUp anzuzeigen. Eine *sehr* "
+"effektive Art, eine Mailingliste, ein Sonderangebot oder eine einfache alte Anzeige zu bewerben."
+msgstr ""
+"Display an eye-catching popup to visitors across your website. A *very* effective way to promote "
+"a mailing list, a special offer, or a simple advertisement."
+
+#. Author of the plugin
+#: popover.php
+msgid "PSOURCE"
+msgstr "PSOURCE"
+
+#. Author URI of the plugin
+#: popover.php
+msgid "https://psource.eimen.net/"
+msgstr "https://psource.eimen.net/"
+
+#: css/tpl/cabriolet/style.php:3
+msgid "Cabriolet"
+msgstr "Cabriolet"
+
+#: css/tpl/cabriolet/template.php:81 css/tpl/old-fullbackground/template.php:47
+#: css/tpl/simple/template.php:67
+msgid "Close this box"
+msgstr "Close this box"
+
+#: css/tpl/minimal/style.php:3
+msgid "Minimal"
+msgstr "Minimal"
+
+#: css/tpl/minimal/template.php:71 css/tpl/old-default/template.php:47
+#: css/tpl/old-fixed/template.php:47
+msgid "Dieses Box schließen"
+msgstr "Close this box"
+
+#: css/tpl/old-default/style.php:3
+msgid "Default"
+msgstr "Default"
+
+#: css/tpl/old-default/template.php:65 css/tpl/old-fixed/template.php:65
+msgid "Dieses Mitteilung nicht mehr anzeigen."
+msgstr "Never show this message again."
+
+#: css/tpl/old-fixed/style.php:3
+msgid "Default Fixed"
+msgstr "Default Fixed"
+
+#: css/tpl/old-fullbackground/style.php:3
+msgid "Dark Background Fixed"
+msgstr "Dark Background Fixed"
+
+#: css/tpl/old-fullbackground/template.php:65
+msgid "Never see this message again."
+msgstr "Never see this message again."
+
+#: css/tpl/simple/style.php:3
+msgid "Simple"
+msgstr "Simple"
+
+#: inc/addons/class-popup-addon-anonymous.php:173
+msgid "Anonymes Skript"
+msgstr "Anonymous Script"
+
+#: inc/addons/class-popup-addon-anonymous.php:175
+msgid ""
+"Erhöhe drastisch die Chance, Werbeblocker zu umgehen. Lädt PopUp wie WordPress AJAX, aber die URL"
+" zum JavaScript-Datei ist maskiert. "
+msgstr ""
+"Greatly increases the chance of bypassing ad blockers. Loads the popup like WordPress AJAX, but "
+"masks the URL of the JavaScript file. "
+
+#: inc/addons/class-popup-addon-headerfooter.php:269
+msgid ""
+"Kritisch: Aufruf von <code>wp_head();</code> fehlt! Es sollte direkt vor "
+"<code>&lt;/head&gt;</code> erscheinen"
+msgstr ""
+"Critical: The call to <code>wp_head();</code> is missing! It should appear immediately before "
+"<code>&lt;/head&gt;</code>"
+
+#: inc/addons/class-popup-addon-headerfooter.php:285
+msgid ""
+"Kritisch: Aufruf von <code>wp_footer();</code> fehlt! Es sollte direkt vor "
+"<code>&lt;/body&gt;</code> erscheinen"
+msgstr ""
+"Critical: The call to <code>wp_footer();</code> is missing! It should appear immediately before "
+"<code>&lt;/body&gt;</code>"
+
+#: inc/addons/class-popup-addon-headerfooter.php:317
+msgid ""
+"Okay: IDein aktuelles Theme verwendet <code>wp_head();</code>> und <code>wp_footer();</code> "
+"korrekt!"
+msgstr "OK: Your current theme uses <code>wp_head();</code> and <code>wp_footer();</code> correctly!"
+
+#: inc/class-popup-admin.php:206 inc/class-popup-admin.php:1038
+msgid "Aktivieren"
+msgstr "Activate"
+
+#: inc/class-popup-admin.php:207 inc/class-popup-admin.php:1014
+msgid "Deaktivieren"
+msgstr "Deactivate"
+
+#: inc/class-popup-admin.php:208
+msgid "Aktivierung umschalten"
+msgstr "Toggle Activation"
+
+#: inc/class-popup-admin.php:526 inc/class-popup-admin.php:528
+msgid "PS PopUp"
+msgstr "PS PopUp"
+
+#: inc/class-popup-admin.php:548 inc/class-popup-admin.php:550 inc/class-popup-item.php:881
+#: inc/class-popup-posttype.php:163
+msgid "Neues PopUp"
+msgstr "New PopUp"
+
+#: inc/class-popup-admin.php:566 inc/class-popup-admin.php:568 inc/class-popup-admin.php:588
+#: inc/class-popup-admin.php:590
+msgid "Einstellungen"
+msgstr "Settings"
+
+#: inc/class-popup-admin.php:580
+msgctxt "Beitragstyp Allgemeiner Name"
+msgid "Globale PopUps"
+msgstr "Global PopUps"
+
+#: inc/class-popup-admin.php:796
+msgid "Country Lookup geändert: Der Lookup-Cache wurde gelöscht."
+msgstr "Country lookup changed: The lookup cache has been cleared."
+
+#: inc/class-popup-admin.php:804
+msgid "Deine Einstellungen wurden aktualisiert."
+msgstr "Your settings have been updated."
+
+#: inc/class-popup-admin.php:878
+msgid "PopUp Name"
+msgstr "PopUp Name"
+
+#: inc/class-popup-admin.php:880
+msgid "Bedingungen"
+msgstr "Conditions"
+
+#: inc/class-popup-admin.php:886
+msgid "Reihenfolge"
+msgstr "Order"
+
+#: inc/class-popup-admin.php:888 inc/class-popup-item.php:2299
+msgid "Aktiv"
+msgstr "Active"
+
+#: inc/class-popup-admin.php:986 inc/class-popup-admin.php:1122
+msgid "Bearbeite dieses PopUp"
+msgstr "Edit this PopUp"
+
+#: inc/class-popup-admin.php:990
+msgid "Bearbeiten"
+msgstr "Edit"
+
+#: inc/class-popup-admin.php:1010
+msgid "Deaktiviere dieses PopUp"
+msgstr "Deactivate this PopUp"
+
+#: inc/class-popup-admin.php:1034
+msgid "Aktiviere dieses PopUp"
+msgstr "Activate this PopUp"
+
+#: inc/class-popup-admin.php:1050
+msgid "Vorschau dieses PopUps"
+msgstr "Preview this PopUp"
+
+#: inc/class-popup-admin.php:1054 views/info-shortcodes.php:207
+msgid "Vorschau"
+msgstr "Preview"
+
+#: inc/class-popup-admin.php:1074
+msgid "Stelle dieses PopUp aus dem Papierkorb wieder her"
+msgstr "Restore this PopUp from the Trash"
+
+#: inc/class-popup-admin.php:1078
+msgid "Wiederherstellen"
+msgstr "Restore"
+
+#: inc/class-popup-admin.php:1088
+msgid "Verschiebe dieses PopUp in den Papierkorb"
+msgstr "Move this PopUp to the Trash"
+
+#: inc/class-popup-admin.php:1092 inc/class-popup-item.php:2303
+msgid "Papierkorb"
+msgstr "Trash"
+
+#: inc/class-popup-admin.php:1104
+msgid "Lösche dieses PopUp dauerhaft"
+msgstr "Permanently delete this PopUp"
+
+#: inc/class-popup-admin.php:1108
+msgid "Dauerhaft löschen"
+msgstr "Delete Permanently"
+
+#: inc/class-popup-admin.php:1198
+msgid "PopUp immer anzeigen"
+msgstr "Always show PopUp"
+
+#: inc/class-popup-admin.php:1276
+#, php-format
+msgid "Alle <span class=\"count\">(%1$s)</span>"
+msgstr "All <span class=\"count\">(%1$s)</span>"
+
+#: inc/class-popup-admin.php:1278
+#, php-format
+msgid "Aktive <span class=\"count\">(%1$s)</span>"
+msgstr "Active <span class=\"count\">(%1$s)</span>"
+
+#: inc/class-popup-admin.php:1280
+#, php-format
+msgid "Inaktive <span class=\"count\">(%1$s)</span>"
+msgstr "Inactive <span class=\"count\">(%1$s)</span>"
+
+#: inc/class-popup-admin.php:1282
+#, php-format
+msgid "Papierkorb <span class=\"count\">(%1$s)</span>"
+msgstr "Trash <span class=\"count\">(%1$s)</span>"
+
+#: inc/class-popup-admin.php:1542
+msgid "Ein PopUp aktiviert"
+msgstr "One PopUp activated"
+
+#: inc/class-popup-admin.php:1544
+#, php-format
+msgid "%1$s PopUps aktiviert"
+msgstr "%1$s PopUps activated"
+
+#: inc/class-popup-admin.php:1554
+msgid "Ein PopUp ist deaktiviert"
+msgstr "One PopUp deactivated"
+
+#: inc/class-popup-admin.php:1556
+#, php-format
+msgid "%1$s PopUps deaktiviert"
+msgstr "%1$s PopUps deactivated"
+
+#: inc/class-popup-admin.php:1566
+msgid "Ein PopUp umgeschaltet"
+msgstr "One PopUp toggled"
+
+#: inc/class-popup-admin.php:1568
+#, php-format
+msgid "%1$s PopUps umgeschaltet"
+msgstr "%1$s PopUps toggled"
+
+#: inc/class-popup-admin.php:2006
+msgid "PopUp Inhalt"
+msgstr "PopUp Content"
+
+#: inc/class-popup-admin.php:2024
+msgid "Aussehen"
+msgstr "Appearance"
+
+#: inc/class-popup-admin.php:2042
+msgid "Verhalten"
+msgstr "Behavior"
+
+#: inc/class-popup-admin.php:2060
+msgid "Anzeigebedingungen (optional)"
+msgstr "Display Conditions (optional)"
+
+#: inc/class-popup-admin.php:2078
+msgid "Benutzerdefiniertes CSS (optional)"
+msgstr "Custom CSS (optional)"
+
+#: inc/class-popup-admin.php:2096
+msgid "PopUp speichern"
+msgstr "Save PopUp"
+
+#: inc/class-popup-admin.php:2140
+msgid "PopUp Name (wird im PopUp nicht angezeigt)"
+msgstr "PopUp name (not displayed in the PopUp)"
+
+#: inc/class-popup-admin.php:2146
+msgid "Gib dem PopUp einen Namen"
+msgstr "Give the PopUp a name"
+
+#: inc/class-popup-base.php:885 inc/class-popup-base.php:1003
+msgid "(Keine Animation)"
+msgstr "(No Animation)"
+
+#: inc/class-popup-base.php:889
+msgid "Attention Seekers"
+msgstr "Attention Seekers"
+
+#: inc/class-popup-base.php:891
+msgid "Bounce"
+msgstr "Bounce"
+
+#: inc/class-popup-base.php:893
+msgid "Flash"
+msgstr "Flash"
+
+#: inc/class-popup-base.php:895
+msgid "Pulse"
+msgstr "Pulse"
+
+#: inc/class-popup-base.php:897
+msgid "Rubber Band"
+msgstr "Rubber Band"
+
+#: inc/class-popup-base.php:899
+msgid "Shake"
+msgstr "Shake"
+
+#: inc/class-popup-base.php:901
+msgid "Swing"
+msgstr "Swing"
+
+#: inc/class-popup-base.php:903
+msgid "Tada"
+msgstr "Tada"
+
+#: inc/class-popup-base.php:905
+msgid "Wobble"
+msgstr "Wobble"
+
+#: inc/class-popup-base.php:909
+msgid "Bouncing Entrances"
+msgstr "Bouncing Entrances"
+
+#: inc/class-popup-base.php:911
+msgid "Bounce In"
+msgstr "Bounce In"
+
+#: inc/class-popup-base.php:913
+msgid "Bounce In Down"
+msgstr "Bounce In Down"
+
+#: inc/class-popup-base.php:915
+msgid "Bounce In Left"
+msgstr "Bounce In Left"
+
+#: inc/class-popup-base.php:917
+msgid "Bounce In Right"
+msgstr "Bounce In Right"
+
+#: inc/class-popup-base.php:919
+msgid "Bounce In Up"
+msgstr "Bounce In Up"
+
+#: inc/class-popup-base.php:923
+msgid "Fading Entrances"
+msgstr "Fading Entrances"
+
+#: inc/class-popup-base.php:925
+msgid "Fade In"
+msgstr "Fade In"
+
+#: inc/class-popup-base.php:927
+msgid "Fade In Down"
+msgstr "Fade In Down"
+
+#: inc/class-popup-base.php:929
+msgid "Fade In Down Big"
+msgstr "Fade In Down Big"
+
+#: inc/class-popup-base.php:931
+msgid "Fade In Left"
+msgstr "Fade In Left"
+
+#: inc/class-popup-base.php:933
+msgid "Fade In Left Big"
+msgstr "Fade In Left Big"
+
+#: inc/class-popup-base.php:935
+msgid "Fade In Right"
+msgstr "Fade In Right"
+
+#: inc/class-popup-base.php:937
+msgid "Fade In Right Big"
+msgstr "Fade In Right Big"
+
+#: inc/class-popup-base.php:939
+msgid "Fade In Up"
+msgstr "Fade In Up"
+
+#: inc/class-popup-base.php:941
+msgid "Fade In Up Big"
+msgstr "Fade In Up Big"
+
+#: inc/class-popup-base.php:945 inc/class-popup-base.php:1043
+msgid "Flippers"
+msgstr "Flippers"
+
+#: inc/class-popup-base.php:947
+msgid "Flip"
+msgstr "Flip"
+
+#: inc/class-popup-base.php:949
+msgid "Flip In X"
+msgstr "Flip In X"
+
+#: inc/class-popup-base.php:951
+msgid "Flip In Y"
+msgstr "Flip In Y"
+
+#: inc/class-popup-base.php:955 inc/class-popup-base.php:1051
+msgid "Lightspeed"
+msgstr "Lightspeed"
+
+#: inc/class-popup-base.php:957
+msgid "Light Speed In"
+msgstr "Light Speed In"
+
+#: inc/class-popup-base.php:961
+msgid "Rotating Entrances"
+msgstr "Rotating Entrances"
+
+#: inc/class-popup-base.php:963
+msgid "Rotate In"
+msgstr "Rotate In"
+
+#: inc/class-popup-base.php:965
+msgid "Rotate In Down Left"
+msgstr "Rotate In Down Left"
+
+#: inc/class-popup-base.php:967
+msgid "Rotate In Down Right"
+msgstr "Rotate In Down Right"
+
+#: inc/class-popup-base.php:969
+msgid "Rotate In Up Left"
+msgstr "Rotate In Up Left"
+
+#: inc/class-popup-base.php:971
+msgid "Rotate In Up Right"
+msgstr "Rotate In Up Right"
+
+#: inc/class-popup-base.php:975 inc/class-popup-base.php:1071
+msgid "Specials"
+msgstr "Specials"
+
+#: inc/class-popup-base.php:977
+msgid "Roll In"
+msgstr "Roll In"
+
+#: inc/class-popup-base.php:981
+msgid "Zoom Entrances"
+msgstr "Zoom Entrances"
+
+#: inc/class-popup-base.php:983
+msgid "Zoom In"
+msgstr "Zoom In"
+
+#: inc/class-popup-base.php:985
+msgid "Zoom In Down"
+msgstr "Zoom In Down"
+
+#: inc/class-popup-base.php:987
+msgid "Zoom In Left"
+msgstr "Zoom In Left"
+
+#: inc/class-popup-base.php:989
+msgid "Zoom In Right"
+msgstr "Zoom In Right"
+
+#: inc/class-popup-base.php:991
+msgid "Zoom In Up"
+msgstr "Zoom In Up"
+
+#: inc/class-popup-base.php:1007
+msgid "Bouncing Exits"
+msgstr "Bouncing Exits"
+
+#: inc/class-popup-base.php:1009
+msgid "Bounce Out"
+msgstr "Bounce Out"
+
+#: inc/class-popup-base.php:1011
+msgid "Bounce Out Down"
+msgstr "Bounce Out Down"
+
+#: inc/class-popup-base.php:1013
+msgid "Bounce Out Left"
+msgstr "Bounce Out Left"
+
+#: inc/class-popup-base.php:1015
+msgid "Bounce Out Right"
+msgstr "Bounce Out Right"
+
+#: inc/class-popup-base.php:1017
+msgid "Bounce Out Up"
+msgstr "Bounce Out Up"
+
+#: inc/class-popup-base.php:1021
+msgid "Fading Exits"
+msgstr "Fading Exits"
+
+#: inc/class-popup-base.php:1023
+msgid "Fade Out"
+msgstr "Fade Out"
+
+#: inc/class-popup-base.php:1025
+msgid "Fade Out Down"
+msgstr "Fade Out Down"
+
+#: inc/class-popup-base.php:1027
+msgid "Fade Out Down Big"
+msgstr "Fade Out Down Big"
+
+#: inc/class-popup-base.php:1029
+msgid "Fade Out Left"
+msgstr "Fade Out Left"
+
+#: inc/class-popup-base.php:1031
+msgid "Fade Out Left Big"
+msgstr "Fade Out Left Big"
+
+#: inc/class-popup-base.php:1033
+msgid "Fade Out Right"
+msgstr "Fade Out Right"
+
+#: inc/class-popup-base.php:1035
+msgid "Fade Out Right Big"
+msgstr "Fade Out Right Big"
+
+#: inc/class-popup-base.php:1037
+msgid "Fade Out Up"
+msgstr "Fade Out Up"
+
+#: inc/class-popup-base.php:1039
+msgid "Fade Out Up Big"
+msgstr "Fade Out Up Big"
+
+#: inc/class-popup-base.php:1045
+msgid "Flip Out X"
+msgstr "Flip Out X"
+
+#: inc/class-popup-base.php:1047
+msgid "Flip Out Y"
+msgstr "Flip Out Y"
+
+#: inc/class-popup-base.php:1053
+msgid "Light Speed Out"
+msgstr "Light Speed Out"
+
+#: inc/class-popup-base.php:1057
+msgid "Rotating Exits"
+msgstr "Rotating Exits"
+
+#: inc/class-popup-base.php:1059
+msgid "Rotate Out"
+msgstr "Rotate Out"
+
+#: inc/class-popup-base.php:1061
+msgid "Rotate Out Down Left"
+msgstr "Rotate Out Down Left"
+
+#: inc/class-popup-base.php:1063
+msgid "Rotate Out Down Right"
+msgstr "Rotate Out Down Right"
+
+#: inc/class-popup-base.php:1065
+msgid "Rotate Out Up Left"
+msgstr "Rotate Out Up Left"
+
+#: inc/class-popup-base.php:1067
+msgid "Rotate Out Up Right"
+msgstr "Rotate Out Up Right"
+
+#: inc/class-popup-base.php:1073
+msgid "Hinge"
+msgstr "Hinge"
+
+#: inc/class-popup-base.php:1075
+msgid "Roll Out"
+msgstr "Roll Out"
+
+#: inc/class-popup-base.php:1079
+msgid "Zoom Exits"
+msgstr "Zoom Exits"
+
+#: inc/class-popup-base.php:1081
+msgid "Zoom Out"
+msgstr "Zoom Out"
+
+#: inc/class-popup-base.php:1083
+msgid "Zoom Out Down"
+msgstr "Zoom Out Down"
+
+#: inc/class-popup-base.php:1085
+msgid "Zoom Out Left"
+msgstr "Zoom Out Left"
+
+#: inc/class-popup-base.php:1087
+msgid "Zoom Out Right"
+msgstr "Zoom Out Right"
+
+#: inc/class-popup-base.php:1089
+msgid "Zoom Out Up"
+msgstr "Zoom Out Up"
+
+#: inc/class-popup-database.php:541
+#, php-format, python-format
+msgid ""
+"<strong>%s</strong><br />Deine Installation wurde erfolgreich aktualisiert, um die neueste "
+"Version des Plugins zu verwenden!<br /><em>Hinweis: Einige PopUp-Optionen wurden geändert oder "
+"ersetzt. Du solltest Deine %sPopUps%s ansehen, um festzustellen, ob sie noch wie beabsichtigt "
+"aussehen.</em>"
+msgstr ""
+"<strong>%s</strong><br />Your installation has been successfully updated to use the latest "
+"version of the plugin!<br /><em>Note: Some PopUp options have been changed or replaced. You "
+"should review your %sPopUps%s to make sure they still look as intended.</em>"
+
+#: inc/class-popup-database.php:1101
+msgid "Seiten Footer"
+msgstr "Page Footer"
+
+#: inc/class-popup-database.php:1103
+msgid "Füge PopUp als Teil des HTML-Codes Deiner Seite hinzu (kein AJAX-Aufruf)."
+msgstr "Add the PopUp as part of your page's HTML (no AJAX request)."
+
+#: inc/class-popup-database.php:1119
+msgid "WordPress AJAX"
+msgstr "WordPress AJAX"
+
+#: inc/class-popup-database.php:1121
+msgid ""
+"Laden Sie PopUp separat von der Seite über einen WordPress AJAX-Aufruf. Dies ist die beste "
+"Option, wenn Du Caching verwendest."
+msgstr ""
+"Load the PopUp separately from the page using a WordPress AJAX request. This is the best option "
+"if you use caching."
+
+#: inc/class-popup-database.php:1139
+msgid "Benutzerdefiniertes AJAX"
+msgstr "Custom AJAX"
+
+#: inc/class-popup-database.php:1141
+msgid "Lade PopUp separat von der Seite über einen benutzerdefinierten Front-End-AJAX-Aufruf."
+msgstr "Load the PopUp separately from the page using a custom front-end AJAX request."
+
+#: inc/class-popup-help.php:113
+msgid "Shortcodes"
+msgstr "Shortcodes"
+
+#: inc/class-popup-item.php:1245
+#, php-format
+msgid "PopUp \"<strong>%1$s</strong>\" gespeichert"
+msgstr "PopUp \"<strong>%1$s</strong>\" saved"
+
+#: inc/class-popup-item.php:1253
+#, php-format
+msgid "PopUp \"<strong>%1$s</strong>\" aktiviert."
+msgstr "PopUp \"<strong>%1$s</strong>\" activated."
+
+#: inc/class-popup-item.php:1261
+#, php-format
+msgid "PopUp \"<strong>%1$s</strong>\" deaktiviert."
+msgstr "PopUp \"<strong>%1$s</strong>\" deactivated."
+
+#: inc/class-popup-item.php:1269
+#, php-format
+msgid "PopUp \"<strong>%1$s</strong>\" wurde in den Papierkorb verschoben."
+msgstr "PopUp \"<strong>%1$s</strong>\" moved to the Trash."
+
+#: inc/class-popup-item.php:1277
+#, php-format
+msgid "PopUp \"<strong>%1$s</strong>\" gespeichert."
+msgstr "PopUp \"<strong>%1$s</strong>\" saved."
+
+#: inc/class-popup-item.php:1289
+msgid "PopUp konnte nicht gespeichert werden."
+msgstr "The PopUp could not be saved."
+
+#: inc/class-popup-item.php:1347
+#, php-format, python-format
+msgid ""
+"Du verwendest Gravity Forms in diesem PopUp. Wechsel am besten zur <a href=\"%s\">Lademethode</a>"
+" \"Seitenfooter\", um sicherzustellen, dass das Formular wie erwartet funktioniert."
+msgstr ""
+"You are using Gravity Forms in this PopUp. Switch to the \"Page Footer\" <a href=\"%s\">loading "
+"method</a> to make sure the form works as expected."
+
+#: inc/class-popup-item.php:1387
+#, php-format, python-format
+msgid ""
+"Für den Shortcode <code>%s</code> ist eine andere <a href=\"%s\">Lademethode</a> erforderlich. "
+"<br /> Versuche \"Seitenfooter\", manchmal jedoch auch die Methode \"Benutzerdefiniertes AJAX\" "
+"funktioniert (bitte teste das Ergebnis)"
+msgstr ""
+"The shortcode <code>%s</code> requires a different <a href=\"%s\">loading method</a>. <br /> Try "
+"\"Page Footer\"; the \"Custom AJAX\" method may also work (please test the result)"
+
+#: inc/class-popup-item.php:1533
+msgid "Nicht mehr anzeigen."
+msgstr "Do not show again."
+
+#: inc/class-popup-item.php:2249 inc/rules/class-popup-rule-user.php:59
+msgid "Besucher ist angemeldet"
+msgstr "Visitor is logged in"
+
+#: inc/class-popup-item.php:2251 inc/rules/class-popup-rule-user.php:77
+msgid "Besucher ist nicht angemeldet"
+msgstr "Visitor is not logged in"
+
+#: inc/class-popup-item.php:2253 inc/rules/class-popup-rule-url.php:59
+msgid "Auf einer bestimmten URL"
+msgstr "On a specific URL"
+
+#: inc/class-popup-item.php:2255 inc/rules/class-popup-rule-url.php:77
+msgid "Nicht auf einer bestimmten URL"
+msgstr "Not on a specific URL"
+
+#: inc/class-popup-item.php:2257 inc/rules/class-popup-rule-geo.php:63
+msgid "In einem bestimmten Land"
+msgstr "In a specific country"
+
+#: inc/class-popup-item.php:2259 inc/rules/class-popup-rule-geo.php:81
+msgid "Nicht in einem bestimmten Land"
+msgstr "Not in a specific country"
+
+#: inc/class-popup-item.php:2261
+msgid "Seite ist keine Bloghosting Pro-Seite"
+msgstr "Site is not a Bloghosting Pro site"
+
+#: inc/class-popup-item.php:2263
+msgid "Besuche über eine Suchmaschine"
+msgstr "Visit from a search engine"
+
+#: inc/class-popup-item.php:2265 inc/rules/class-popup-rule-user.php:121
+msgid "Besucher hat noch nie kommentiert"
+msgstr "Visitor has never commented"
+
+#: inc/class-popup-item.php:2267
+msgid "Besuche über keinen internen Link"
+msgstr "Visit is not from an internal link"
+
+#: inc/class-popup-item.php:2269
+msgid "Besuch über einen bestimmten Referer"
+msgstr "Visit from a specific referrer"
+
+#: inc/class-popup-item.php:2271
+msgid "Popover wird weniger als x-mal angezeigt"
+msgstr "PopUp shown fewer than x times"
+
+#: inc/class-popup-item.php:2301
+msgid "Inaktiv"
+msgstr "Inactive"
+
+#: inc/class-popup-posttype.php:149
+msgctxt "Post Type General Name"
+msgid "PopUps"
+msgstr "PopUps"
+
+#: inc/class-popup-posttype.php:151
+msgctxt "Post Type Singular Name"
+msgid "PopUp"
+msgstr "PopUp"
+
+#: inc/class-popup-posttype.php:153 inc/class-popup-posttype.php:193
+msgid "PopUp"
+msgstr "PopUp"
+
+#: inc/class-popup-posttype.php:155
+msgid "Eltern Artikel:"
+msgstr "Parent Item:"
+
+#: inc/class-popup-posttype.php:157
+msgid "PopUps"
+msgstr "PopUps"
+
+#: inc/class-popup-posttype.php:159
+msgid "Element anzeigen"
+msgstr "View Item"
+
+#: inc/class-popup-posttype.php:161
+msgid "Neues PopUp hinzufügen"
+msgstr "Add New PopUp"
+
+#: inc/class-popup-posttype.php:165
+msgid "PopUp bearbeiten"
+msgstr "Edit PopUp"
+
+#: inc/class-popup-posttype.php:167
+msgid "Aktualisiere PopUp"
+msgstr "Update PopUp"
+
+#: inc/class-popup-posttype.php:169
+msgid "Suche PopUp"
+msgstr "Search PopUps"
+
+#: inc/class-popup-posttype.php:171
+msgid "Nicht gefunden"
+msgstr "Not found"
+
+#: inc/class-popup-posttype.php:173
+msgid "Kein PopUp im Papierkorb gefunden"
+msgstr "No PopUps found in the Trash"
+
+#: inc/class-popup-posttype.php:181
+msgctxt "Post Type General Name"
+msgid "Globale PopUps"
+msgstr "Global PopUps"
+
+#: inc/class-popup-posttype.php:183
+msgctxt "Post Type Singular Name"
+msgid "Globales PopUp"
+msgstr "Global PopUp"
+
+#: inc/class-popup-posttype.php:185 views/network.php:57
+msgid "Globale PopUps"
+msgstr "Global PopUps"
+
+#: inc/class-popup-posttype.php:195
+msgid "Zeige PopUp-Nachrichten auf Deiner Webseite an!"
+msgstr "Display PopUp messages on your website!"
+
+#: inc/rules/class-popup-rule-advurl.php:63
+msgid "Auf ungefähre URL"
+msgstr "On a matching URL"
+
+#: inc/rules/class-popup-rule-advurl.php:65 inc/rules/class-popup-rule-url.php:61
+msgid "Zeigt das PopUp an, wenn sich der Benutzer unter einer bestimmten URL befindet."
+msgstr "Displays the PopUp when the user is on a specific URL."
+
+#: inc/rules/class-popup-rule-advurl.php:81
+msgid "Nicht auf ungefähre URL"
+msgstr "Not on a matching URL"
+
+#: inc/rules/class-popup-rule-advurl.php:83 inc/rules/class-popup-rule-url.php:79
+msgid "Zeigt das PopUp an, wenn sich der Benutzer nicht auf einer bestimmten URL befindet."
+msgstr "Displays the PopUp when the user is not on a specific URL."
+
+#: inc/rules/class-popup-rule-advurl.php:177 inc/rules/class-popup-rule-advurl.php:291
+msgid "URL-Regex (einer pro Zeile):"
+msgstr "URL regex (one per line):"
+
+#: inc/rules/class-popup-rule-browser.php:58
+msgid "Nur auf mobilen Geräten"
+msgstr "Only on mobile devices"
+
+#: inc/rules/class-popup-rule-browser.php:60
+msgid "Zeigt das PopUp Besuchern an, die ein mobiles Gerät (Telefon oder Tablet) verwenden.."
+msgstr "Displays the PopUp to visitors using a mobile device (phone or tablet)."
+
+#: inc/rules/class-popup-rule-browser.php:76
+msgid "Nicht auf mobilen Geräten"
+msgstr "Not on mobile devices"
+
+#: inc/rules/class-popup-rule-browser.php:78
+msgid ""
+"Zeigt das PopUp Besuchern an, die einen normalen Computer oder Laptop verwenden (d. H. Kein "
+"Telefon oder Tablet)."
+msgstr "Displays the PopUp to visitors using a desktop computer or laptop (not a phone or tablet)."
+
+#: inc/rules/class-popup-rule-category.php:37
+msgid "Auf Beitragskategorie"
+msgstr "In a post category"
+
+#: inc/rules/class-popup-rule-category.php:38
+msgid "Zeigt das PopUp auf Seiten an, die einer der angegebenen Kategorien entsprechen."
+msgstr "Displays the PopUp on pages matching one of the specified categories."
+
+#: inc/rules/class-popup-rule-category.php:46
+msgid "Nicht in Beitragskategorie"
+msgstr "Not in a post category"
+
+#: inc/rules/class-popup-rule-category.php:47
+msgid "Zeigt das PopUp auf Seiten an, die keiner der angegebenen Kategorien entsprechen."
+msgstr "Displays the PopUp on pages that do not match any of the specified categories."
+
+#: inc/rules/class-popup-rule-category.php:67 inc/rules/class-popup-rule-posttype.php:66
+#: inc/rules/class-popup-rule-taxonomy.php:73
+msgid "Singular"
+msgstr "Singular"
+
+#: inc/rules/class-popup-rule-category.php:68 inc/rules/class-popup-rule-posttype.php:67
+#: inc/rules/class-popup-rule-taxonomy.php:74
+msgid "Archiv"
+msgstr "Archive"
+
+#: inc/rules/class-popup-rule-category.php:123
+msgid "In diesen Beitragskategorien anzeigen:"
+msgstr "Show in these post categories:"
+
+#: inc/rules/class-popup-rule-category.php:124
+msgid "Auf diesen Kategorietypen URLs anzeigen:"
+msgstr "Show on these category URL types:"
+
+#: inc/rules/class-popup-rule-category.php:173
+msgid "Verstecke in diesen Beitragskategorien:"
+msgstr "Hide in these post categories:"
+
+#: inc/rules/class-popup-rule-category.php:174
+msgid "Verstecke in diesen Kategorietyp URLs:"
+msgstr "Hide on these category URL types:"
+
+#: inc/rules/class-popup-rule-datetime.php:63
+msgid "PopUp am Datum anzeigen"
+msgstr "Show PopUp on a date"
+
+#: inc/rules/class-popup-rule-datetime.php:67
+msgid "Zeigt das PopUp nur an, wenn das angegebene Datum erreicht ist."
+msgstr "Displays the PopUp only once the specified date has been reached."
+
+#: inc/rules/class-popup-rule-datetime.php:69 inc/rules/class-popup-rule-datetime.php:99
+#, php-format, python-format
+msgid "Werte in %sUTC%s. Aktuelle UTC-Zeit: %s"
+msgstr "Values in %sUTC%s. Current UTC time: %s"
+
+#: inc/rules/class-popup-rule-datetime.php:93
+msgid "PopUp am Datum ausblenden"
+msgstr "Hide PopUp on a date"
+
+#: inc/rules/class-popup-rule-datetime.php:97
+msgid "Blende das PopUp aus, sobald ein bestimmtes Datum erreicht ist."
+msgstr "Hides the PopUp once a specific date has been reached."
+
+#: inc/rules/class-popup-rule-datetime.php:205
+msgid "Anzeigen, wenn das Datum erreicht ist:"
+msgstr "Show when this date is reached:"
+
+#: inc/rules/class-popup-rule-datetime.php:225 inc/rules/class-popup-rule-datetime.php:381
+msgid "Nach dieser Zeit:"
+msgstr "After this time:"
+
+#: inc/rules/class-popup-rule-datetime.php:361
+msgid "Ausblenden, wenn das Datum erreicht ist:"
+msgstr "Hide when this date is reached:"
+
+#: inc/rules/class-popup-rule-events.php:163
+msgid "Erscheint, wenn die Maus das Browserfenster verlässt"
+msgstr "Show when the mouse leaves the browser window"
+
+#: inc/rules/class-popup-rule-events.php:329
+msgid "Erscheint, wenn der Benutzer auf eine CSS-Auswahl klickt"
+msgstr "Show when the user clicks an element matching a CSS selector"
+
+#: inc/rules/class-popup-rule-events.php:343 views/meta-behavior.php:99
+msgid ".class oder #id"
+msgstr ".class or #id"
+
+#: inc/rules/class-popup-rule-events.php:357
+msgid "Wiederholt"
+msgstr "Repeat"
+
+#: inc/rules/class-popup-rule-geo.php:65
+msgid "Zeigt das PopUp an, wenn sich der Benutzer in einem bestimmten Land befindet."
+msgstr "Displays the PopUp when the user is in a specific country."
+
+#: inc/rules/class-popup-rule-geo.php:83
+msgid "Zeigt das PopUp an, wenn sich der Benutzer nicht in einem bestimmten Land befindet."
+msgstr "Displays the PopUp when the user is not in a specific country."
+
+#: inc/rules/class-popup-rule-geo.php:179
+msgid "Included countries:"
+msgstr "Included countries:"
+
+#: inc/rules/class-popup-rule-geo.php:189
+msgid "Klicke hier, um ein Land auszuwählen"
+msgstr "Click here to select a country"
+
+#: inc/rules/class-popup-rule-geo.php:311
+msgid "Ausgeschlossene Länder:"
+msgstr "Excluded countries:"
+
+#: inc/rules/class-popup-rule-geo.php:321
+msgid "Klicke hier um ein Land auszuwählen"
+msgstr "Click here to select a country"
+
+#: inc/rules/class-popup-rule-geo.php:577
+msgid "Lokale IP Lookup Tabelle"
+msgstr "Local IP Lookup Table"
+
+#: inc/rules/class-popup-rule-geo.php:771
+msgid "Australia"
+msgstr "Australia"
+
+#: inc/rules/class-popup-rule-geo.php:773
+msgid "Afghanistan"
+msgstr "Afghanistan"
+
+#: inc/rules/class-popup-rule-geo.php:775
+msgid "Albania"
+msgstr "Albania"
+
+#: inc/rules/class-popup-rule-geo.php:777
+msgid "Algeria"
+msgstr "Algeria"
+
+#: inc/rules/class-popup-rule-geo.php:779
+msgid "American Samoa"
+msgstr "American Samoa"
+
+#: inc/rules/class-popup-rule-geo.php:781
+msgid "Andorra"
+msgstr "Andorra"
+
+#: inc/rules/class-popup-rule-geo.php:783
+msgid "Angola"
+msgstr "Angola"
+
+#: inc/rules/class-popup-rule-geo.php:785
+msgid "Anguilla"
+msgstr "Anguilla"
+
+#: inc/rules/class-popup-rule-geo.php:787
+msgid "Antarctica"
+msgstr "Antarctica"
+
+#: inc/rules/class-popup-rule-geo.php:789
+msgid "Antigua & Barbuda"
+msgstr "Antigua & Barbuda"
+
+#: inc/rules/class-popup-rule-geo.php:791
+msgid "Argentina"
+msgstr "Argentina"
+
+#: inc/rules/class-popup-rule-geo.php:793
+msgid "Armenia"
+msgstr "Armenia"
+
+#: inc/rules/class-popup-rule-geo.php:795
+msgid "Aruba"
+msgstr "Aruba"
+
+#: inc/rules/class-popup-rule-geo.php:797
+msgid "Österreich"
+msgstr "Austria"
+
+#: inc/rules/class-popup-rule-geo.php:799
+msgid "Azerbaijan"
+msgstr "Azerbaijan"
+
+#: inc/rules/class-popup-rule-geo.php:801
+msgid "Bahamas"
+msgstr "Bahamas"
+
+#: inc/rules/class-popup-rule-geo.php:803
+msgid "Bahrain"
+msgstr "Bahrain"
+
+#: inc/rules/class-popup-rule-geo.php:805
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+#: inc/rules/class-popup-rule-geo.php:807
+msgid "Barbados"
+msgstr "Barbados"
+
+#: inc/rules/class-popup-rule-geo.php:809
+msgid "Belarus"
+msgstr "Belarus"
+
+#: inc/rules/class-popup-rule-geo.php:811
+msgid "Belgien"
+msgstr "Belgium"
+
+#: inc/rules/class-popup-rule-geo.php:813
+msgid "Belize"
+msgstr "Belize"
+
+#: inc/rules/class-popup-rule-geo.php:815
+msgid "Benin"
+msgstr "Benin"
+
+#: inc/rules/class-popup-rule-geo.php:817
+msgid "Bermuda"
+msgstr "Bermuda"
+
+#: inc/rules/class-popup-rule-geo.php:819
+msgid "Bhutan"
+msgstr "Bhutan"
+
+#: inc/rules/class-popup-rule-geo.php:821
+msgid "Bolivia"
+msgstr "Bolivia"
+
+#: inc/rules/class-popup-rule-geo.php:823
+msgid "Bosnia/Hercegovina"
+msgstr "Bosnia/Hercegovina"
+
+#: inc/rules/class-popup-rule-geo.php:825
+msgid "Botswana"
+msgstr "Botswana"
+
+#: inc/rules/class-popup-rule-geo.php:827
+msgid "Bouvet Island"
+msgstr "Bouvet Island"
+
+#: inc/rules/class-popup-rule-geo.php:829
+msgid "Brazil"
+msgstr "Brazil"
+
+#: inc/rules/class-popup-rule-geo.php:831
+msgid "British Indian Ocean Territory"
+msgstr "British Indian Ocean Territory"
+
+#: inc/rules/class-popup-rule-geo.php:833
+msgid "Brunei Darussalam"
+msgstr "Brunei Darussalam"
+
+#: inc/rules/class-popup-rule-geo.php:835
+msgid "Bulgaria"
+msgstr "Bulgaria"
+
+#: inc/rules/class-popup-rule-geo.php:837
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: inc/rules/class-popup-rule-geo.php:839
+msgid "Burundi"
+msgstr "Burundi"
+
+#: inc/rules/class-popup-rule-geo.php:841
+msgid "Cambodia"
+msgstr "Cambodia"
+
+#: inc/rules/class-popup-rule-geo.php:843
+msgid "Cameroon"
+msgstr "Cameroon"
+
+#: inc/rules/class-popup-rule-geo.php:845
+msgid "Canada"
+msgstr "Canada"
+
+#: inc/rules/class-popup-rule-geo.php:847
+msgid "Cape Verde"
+msgstr "Cape Verde"
+
+#: inc/rules/class-popup-rule-geo.php:849
+msgid "Cayman Is"
+msgstr "Cayman Is"
+
+#: inc/rules/class-popup-rule-geo.php:851
+msgid "Central African Republic"
+msgstr "Central African Republic"
+
+#: inc/rules/class-popup-rule-geo.php:853
+msgid "Chad"
+msgstr "Chad"
+
+#: inc/rules/class-popup-rule-geo.php:855
+msgid "Chile"
+msgstr "Chile"
+
+#: inc/rules/class-popup-rule-geo.php:857
+msgid "China, People's Republic of"
+msgstr "China, People's Republic of"
+
+#: inc/rules/class-popup-rule-geo.php:859
+msgid "Christmas Island"
+msgstr "Christmas Island"
+
+#: inc/rules/class-popup-rule-geo.php:861
+msgid "Cocos Islands"
+msgstr "Cocos Islands"
+
+#: inc/rules/class-popup-rule-geo.php:863
+msgid "Colombia"
+msgstr "Colombia"
+
+#: inc/rules/class-popup-rule-geo.php:865
+msgid "Comoros"
+msgstr "Comoros"
+
+#: inc/rules/class-popup-rule-geo.php:867
+msgid "Congo"
+msgstr "Congo"
+
+#: inc/rules/class-popup-rule-geo.php:869
+msgid "Congo, Democratic Republic"
+msgstr "Congo, Democratic Republic"
+
+#: inc/rules/class-popup-rule-geo.php:871
+msgid "Cook Islands"
+msgstr "Cook Islands"
+
+#: inc/rules/class-popup-rule-geo.php:873
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+#: inc/rules/class-popup-rule-geo.php:875
+msgid "Cote d'Ivoire"
+msgstr "Cote d'Ivoire"
+
+#: inc/rules/class-popup-rule-geo.php:877
+msgid "Croatia"
+msgstr "Croatia"
+
+#: inc/rules/class-popup-rule-geo.php:879
+msgid "Cuba"
+msgstr "Cuba"
+
+#: inc/rules/class-popup-rule-geo.php:881
+msgid "Cyprus"
+msgstr "Cyprus"
+
+#: inc/rules/class-popup-rule-geo.php:883
+msgid "Czech Republic"
+msgstr "Czech Republic"
+
+#: inc/rules/class-popup-rule-geo.php:885
+msgid "Denmark"
+msgstr "Denmark"
+
+#: inc/rules/class-popup-rule-geo.php:887
+msgid "Djibouti"
+msgstr "Djibouti"
+
+#: inc/rules/class-popup-rule-geo.php:889
+msgid "Dominica"
+msgstr "Dominica"
+
+#: inc/rules/class-popup-rule-geo.php:891
+msgid "Dominican Republic"
+msgstr "Dominican Republic"
+
+#: inc/rules/class-popup-rule-geo.php:893
+msgid "East Timor"
+msgstr "East Timor"
+
+#: inc/rules/class-popup-rule-geo.php:895
+msgid "Ecuador"
+msgstr "Ecuador"
+
+#: inc/rules/class-popup-rule-geo.php:897
+msgid "Egypt"
+msgstr "Egypt"
+
+#: inc/rules/class-popup-rule-geo.php:899
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#: inc/rules/class-popup-rule-geo.php:901
+msgid "Equatorial Guinea"
+msgstr "Equatorial Guinea"
+
+#: inc/rules/class-popup-rule-geo.php:903
+msgid "Eritrea"
+msgstr "Eritrea"
+
+#: inc/rules/class-popup-rule-geo.php:905
+msgid "Estonia"
+msgstr "Estonia"
+
+#: inc/rules/class-popup-rule-geo.php:907
+msgid "Ethiopia"
+msgstr "Ethiopia"
+
+#: inc/rules/class-popup-rule-geo.php:909
+msgid "Falkland Islands"
+msgstr "Falkland Islands"
+
+#: inc/rules/class-popup-rule-geo.php:911
+msgid "Faroe Islands"
+msgstr "Faroe Islands"
+
+#: inc/rules/class-popup-rule-geo.php:913
+msgid "Fiji"
+msgstr "Fiji"
+
+#: inc/rules/class-popup-rule-geo.php:915
+msgid "Finland"
+msgstr "Finland"
+
+#: inc/rules/class-popup-rule-geo.php:917
+msgid "France"
+msgstr "France"
+
+#: inc/rules/class-popup-rule-geo.php:919
+msgid "France, Metropolitan"
+msgstr "France, Metropolitan"
+
+#: inc/rules/class-popup-rule-geo.php:921
+msgid "French Guiana"
+msgstr "French Guiana"
+
+#: inc/rules/class-popup-rule-geo.php:923
+msgid "French Polynesia"
+msgstr "French Polynesia"
+
+#: inc/rules/class-popup-rule-geo.php:925
+msgid "French South Territories"
+msgstr "French South Territories"
+
+#: inc/rules/class-popup-rule-geo.php:927
+msgid "Gabon"
+msgstr "Gabon"
+
+#: inc/rules/class-popup-rule-geo.php:929
+msgid "Gambia"
+msgstr "Gambia"
+
+#: inc/rules/class-popup-rule-geo.php:931
+msgid "Georgia"
+msgstr "Georgia"
+
+#: inc/rules/class-popup-rule-geo.php:933
+msgid "Deutschland"
+msgstr "Germany"
+
+#: inc/rules/class-popup-rule-geo.php:935
+msgid "Ghana"
+msgstr "Ghana"
+
+#: inc/rules/class-popup-rule-geo.php:937
+msgid "Gibraltar"
+msgstr "Gibraltar"
+
+#: inc/rules/class-popup-rule-geo.php:939
+msgid "Greece"
+msgstr "Greece"
+
+#: inc/rules/class-popup-rule-geo.php:941
+msgid "Greenland"
+msgstr "Greenland"
+
+#: inc/rules/class-popup-rule-geo.php:943
+msgid "Grenada"
+msgstr "Grenada"
+
+#: inc/rules/class-popup-rule-geo.php:945
+msgid "Guadeloupe"
+msgstr "Guadeloupe"
+
+#: inc/rules/class-popup-rule-geo.php:947
+msgid "Guam"
+msgstr "Guam"
+
+#: inc/rules/class-popup-rule-geo.php:949
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#: inc/rules/class-popup-rule-geo.php:951
+msgid "Guinea"
+msgstr "Guinea"
+
+#: inc/rules/class-popup-rule-geo.php:953
+msgid "Guinea-Bissau"
+msgstr "Guinea-Bissau"
+
+#: inc/rules/class-popup-rule-geo.php:955
+msgid "Guyana"
+msgstr "Guyana"
+
+#: inc/rules/class-popup-rule-geo.php:957
+msgid "Haiti"
+msgstr "Haiti"
+
+#: inc/rules/class-popup-rule-geo.php:959
+msgid "Heard Island And Mcdonald Island"
+msgstr "Heard Island And Mcdonald Island"
+
+#: inc/rules/class-popup-rule-geo.php:961
+msgid "Honduras"
+msgstr "Honduras"
+
+#: inc/rules/class-popup-rule-geo.php:963
+msgid "Hong Kong"
+msgstr "Hong Kong"
+
+#: inc/rules/class-popup-rule-geo.php:965
+msgid "Hungary"
+msgstr "Hungary"
+
+#: inc/rules/class-popup-rule-geo.php:967
+msgid "Iceland"
+msgstr "Iceland"
+
+#: inc/rules/class-popup-rule-geo.php:969
+msgid "India"
+msgstr "India"
+
+#: inc/rules/class-popup-rule-geo.php:971
+msgid "Indonesia"
+msgstr "Indonesia"
+
+#: inc/rules/class-popup-rule-geo.php:973
+msgid "Iran"
+msgstr "Iran"
+
+#: inc/rules/class-popup-rule-geo.php:975
+msgid "Iraq"
+msgstr "Iraq"
+
+#: inc/rules/class-popup-rule-geo.php:977
+msgid "Ireland"
+msgstr "Ireland"
+
+#: inc/rules/class-popup-rule-geo.php:979
+msgid "Israel"
+msgstr "Israel"
+
+#: inc/rules/class-popup-rule-geo.php:981
+msgid "Italy"
+msgstr "Italy"
+
+#: inc/rules/class-popup-rule-geo.php:983
+msgid "Jamaica"
+msgstr "Jamaica"
+
+#: inc/rules/class-popup-rule-geo.php:985
+msgid "Japan"
+msgstr "Japan"
+
+#: inc/rules/class-popup-rule-geo.php:987
+msgid "Johnston Island"
+msgstr "Johnston Island"
+
+#: inc/rules/class-popup-rule-geo.php:989
+msgid "Jordan"
+msgstr "Jordan"
+
+#: inc/rules/class-popup-rule-geo.php:991
+msgid "Kazakhstan"
+msgstr "Kazakhstan"
+
+#: inc/rules/class-popup-rule-geo.php:993
+msgid "Kenya"
+msgstr "Kenya"
+
+#: inc/rules/class-popup-rule-geo.php:995
+msgid "Kiribati"
+msgstr "Kiribati"
+
+#: inc/rules/class-popup-rule-geo.php:997
+msgid "Korea, Democratic Peoples Republic"
+msgstr "Korea, Democratic Peoples Republic"
+
+#: inc/rules/class-popup-rule-geo.php:999
+msgid "Korea, Republic of"
+msgstr "Korea, Republic of"
+
+#: inc/rules/class-popup-rule-geo.php:1001
+msgid "Kuwait"
+msgstr "Kuwait"
+
+#: inc/rules/class-popup-rule-geo.php:1003
+msgid "Kyrgyzstan"
+msgstr "Kyrgyzstan"
+
+#: inc/rules/class-popup-rule-geo.php:1005
+msgid "Lao People's Democratic Republic"
+msgstr "Lao People's Democratic Republic"
+
+#: inc/rules/class-popup-rule-geo.php:1007
+msgid "Latvia"
+msgstr "Latvia"
+
+#: inc/rules/class-popup-rule-geo.php:1009
+msgid "Lebanon"
+msgstr "Lebanon"
+
+#: inc/rules/class-popup-rule-geo.php:1011
+msgid "Lesotho"
+msgstr "Lesotho"
+
+#: inc/rules/class-popup-rule-geo.php:1013
+msgid "Liberia"
+msgstr "Liberia"
+
+#: inc/rules/class-popup-rule-geo.php:1015
+msgid "Libyan Arab Jamahiriya"
+msgstr "Libyan Arab Jamahiriya"
+
+#: inc/rules/class-popup-rule-geo.php:1017
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: inc/rules/class-popup-rule-geo.php:1019
+msgid "Lithuania"
+msgstr "Lithuania"
+
+#: inc/rules/class-popup-rule-geo.php:1021
+msgid "Luxembourg"
+msgstr "Luxembourg"
+
+#: inc/rules/class-popup-rule-geo.php:1023
+msgid "Macau"
+msgstr "Macau"
+
+#: inc/rules/class-popup-rule-geo.php:1025
+msgid "Macedonia"
+msgstr "Macedonia"
+
+#: inc/rules/class-popup-rule-geo.php:1027
+msgid "Madagascar"
+msgstr "Madagascar"
+
+#: inc/rules/class-popup-rule-geo.php:1029
+msgid "Malawi"
+msgstr "Malawi"
+
+#: inc/rules/class-popup-rule-geo.php:1031
+msgid "Malaysia"
+msgstr "Malaysia"
+
+#: inc/rules/class-popup-rule-geo.php:1033
+msgid "Maldives"
+msgstr "Maldives"
+
+#: inc/rules/class-popup-rule-geo.php:1035
+msgid "Mali"
+msgstr "Mali"
+
+#: inc/rules/class-popup-rule-geo.php:1037
+msgid "Malta"
+msgstr "Malta"
+
+#: inc/rules/class-popup-rule-geo.php:1039
+msgid "Marshall Islands"
+msgstr "Marshall Islands"
+
+#: inc/rules/class-popup-rule-geo.php:1041
+msgid "Martinique"
+msgstr "Martinique"
+
+#: inc/rules/class-popup-rule-geo.php:1043
+msgid "Mauritania"
+msgstr "Mauritania"
+
+#: inc/rules/class-popup-rule-geo.php:1045
+msgid "Mauritius"
+msgstr "Mauritius"
+
+#: inc/rules/class-popup-rule-geo.php:1047
+msgid "Mayotte"
+msgstr "Mayotte"
+
+#: inc/rules/class-popup-rule-geo.php:1049
+msgid "Mexico"
+msgstr "Mexico"
+
+#: inc/rules/class-popup-rule-geo.php:1051
+msgid "Micronesia"
+msgstr "Micronesia"
+
+#: inc/rules/class-popup-rule-geo.php:1053
+msgid "Moldavia"
+msgstr "Moldavia"
+
+#: inc/rules/class-popup-rule-geo.php:1055
+msgid "Monaco"
+msgstr "Monaco"
+
+#: inc/rules/class-popup-rule-geo.php:1057
+msgid "Mongolia"
+msgstr "Mongolia"
+
+#: inc/rules/class-popup-rule-geo.php:1059
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: inc/rules/class-popup-rule-geo.php:1061
+msgid "Morocco"
+msgstr "Morocco"
+
+#: inc/rules/class-popup-rule-geo.php:1063
+msgid "Mozambique"
+msgstr "Mozambique"
+
+#: inc/rules/class-popup-rule-geo.php:1065
+msgid "Union Of Myanmar"
+msgstr "Union Of Myanmar"
+
+#: inc/rules/class-popup-rule-geo.php:1067
+msgid "Namibia"
+msgstr "Namibia"
+
+#: inc/rules/class-popup-rule-geo.php:1069
+msgid "Nauru Island"
+msgstr "Nauru Island"
+
+#: inc/rules/class-popup-rule-geo.php:1071
+msgid "Nepal"
+msgstr "Nepal"
+
+#: inc/rules/class-popup-rule-geo.php:1073
+msgid "Netherlands"
+msgstr "Netherlands"
+
+#: inc/rules/class-popup-rule-geo.php:1075
+msgid "Netherlands Antilles"
+msgstr "Netherlands Antilles"
+
+#: inc/rules/class-popup-rule-geo.php:1077
+msgid "New Caledonia"
+msgstr "New Caledonia"
+
+#: inc/rules/class-popup-rule-geo.php:1079
+msgid "New Zealand"
+msgstr "New Zealand"
+
+#: inc/rules/class-popup-rule-geo.php:1081
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+#: inc/rules/class-popup-rule-geo.php:1083
+msgid "Niger"
+msgstr "Niger"
+
+#: inc/rules/class-popup-rule-geo.php:1085
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#: inc/rules/class-popup-rule-geo.php:1087
+msgid "Niue"
+msgstr "Niue"
+
+#: inc/rules/class-popup-rule-geo.php:1089
+msgid "Norfolk Island"
+msgstr "Norfolk Island"
+
+#: inc/rules/class-popup-rule-geo.php:1091
+msgid "Mariana Islands, Northern"
+msgstr "Mariana Islands, Northern"
+
+#: inc/rules/class-popup-rule-geo.php:1093
+msgid "Norway"
+msgstr "Norway"
+
+#: inc/rules/class-popup-rule-geo.php:1095
+msgid "Oman"
+msgstr "Oman"
+
+#: inc/rules/class-popup-rule-geo.php:1097
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#: inc/rules/class-popup-rule-geo.php:1099
+msgid "Palau Islands"
+msgstr "Palau Islands"
+
+#: inc/rules/class-popup-rule-geo.php:1101
+msgid "Palestine"
+msgstr "Palestine"
+
+#: inc/rules/class-popup-rule-geo.php:1103
+msgid "Panama"
+msgstr "Panama"
+
+#: inc/rules/class-popup-rule-geo.php:1105
+msgid "Papua New Guinea"
+msgstr "Papua New Guinea"
+
+#: inc/rules/class-popup-rule-geo.php:1107
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#: inc/rules/class-popup-rule-geo.php:1109
+msgid "Peru"
+msgstr "Peru"
+
+#: inc/rules/class-popup-rule-geo.php:1111
+msgid "Philippines"
+msgstr "Philippines"
+
+#: inc/rules/class-popup-rule-geo.php:1113
+msgid "Pitcairn"
+msgstr "Pitcairn"
+
+#: inc/rules/class-popup-rule-geo.php:1115
+msgid "Poland"
+msgstr "Poland"
+
+#: inc/rules/class-popup-rule-geo.php:1117
+msgid "Portugal"
+msgstr "Portugal"
+
+#: inc/rules/class-popup-rule-geo.php:1119
+msgid "Puerto Rico"
+msgstr "Puerto Rico"
+
+#: inc/rules/class-popup-rule-geo.php:1121
+msgid "Qatar"
+msgstr "Qatar"
+
+#: inc/rules/class-popup-rule-geo.php:1123
+msgid "Reunion Island"
+msgstr "Reunion Island"
+
+#: inc/rules/class-popup-rule-geo.php:1125
+msgid "Romania"
+msgstr "Romania"
+
+#: inc/rules/class-popup-rule-geo.php:1127
+msgid "Russian Federation"
+msgstr "Russian Federation"
+
+#: inc/rules/class-popup-rule-geo.php:1129
+msgid "Rwanda"
+msgstr "Rwanda"
+
+#: inc/rules/class-popup-rule-geo.php:1131
+msgid "Samoa"
+msgstr "Samoa"
+
+#: inc/rules/class-popup-rule-geo.php:1133
+msgid "St Helena"
+msgstr "St Helena"
+
+#: inc/rules/class-popup-rule-geo.php:1135
+msgid "St Kitts & Nevis"
+msgstr "St Kitts & Nevis"
+
+#: inc/rules/class-popup-rule-geo.php:1137
+msgid "St Lucia"
+msgstr "St Lucia"
+
+#: inc/rules/class-popup-rule-geo.php:1139
+msgid "St Pierre & Miquelon"
+msgstr "St Pierre & Miquelon"
+
+#: inc/rules/class-popup-rule-geo.php:1141
+msgid "St Vincent"
+msgstr "St Vincent"
+
+#: inc/rules/class-popup-rule-geo.php:1143
+msgid "San Marino"
+msgstr "San Marino"
+
+#: inc/rules/class-popup-rule-geo.php:1145
+msgid "Sao Tome & Principe"
+msgstr "Sao Tome & Principe"
+
+#: inc/rules/class-popup-rule-geo.php:1147
+msgid "Saudi Arabia"
+msgstr "Saudi Arabia"
+
+#: inc/rules/class-popup-rule-geo.php:1149
+msgid "Senegal"
+msgstr "Senegal"
+
+#: inc/rules/class-popup-rule-geo.php:1151
+msgid "Seychelles"
+msgstr "Seychelles"
+
+#: inc/rules/class-popup-rule-geo.php:1153
+msgid "Sierra Leone"
+msgstr "Sierra Leone"
+
+#: inc/rules/class-popup-rule-geo.php:1155
+msgid "Singapore"
+msgstr "Singapore"
+
+#: inc/rules/class-popup-rule-geo.php:1157
+msgid "Slovakia"
+msgstr "Slovakia"
+
+#: inc/rules/class-popup-rule-geo.php:1159
+msgid "Slovenia"
+msgstr "Slovenia"
+
+#: inc/rules/class-popup-rule-geo.php:1161
+msgid "Solomon Islands"
+msgstr "Solomon Islands"
+
+#: inc/rules/class-popup-rule-geo.php:1163
+msgid "Somalia"
+msgstr "Somalia"
+
+#: inc/rules/class-popup-rule-geo.php:1165
+msgid "South Africa"
+msgstr "South Africa"
+
+#: inc/rules/class-popup-rule-geo.php:1167
+msgid "South Georgia and South Sandwich"
+msgstr "South Georgia and South Sandwich"
+
+#: inc/rules/class-popup-rule-geo.php:1169
+msgid "Spain"
+msgstr "Spain"
+
+#: inc/rules/class-popup-rule-geo.php:1171
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: inc/rules/class-popup-rule-geo.php:1173
+msgid "Stateless Persons"
+msgstr "Stateless Persons"
+
+#: inc/rules/class-popup-rule-geo.php:1175
+msgid "Sudan"
+msgstr "Sudan"
+
+#: inc/rules/class-popup-rule-geo.php:1177
+msgid "Suriname"
+msgstr "Suriname"
+
+#: inc/rules/class-popup-rule-geo.php:1179
+msgid "Svalbard and Jan Mayen"
+msgstr "Svalbard and Jan Mayen"
+
+#: inc/rules/class-popup-rule-geo.php:1181
+msgid "Swaziland"
+msgstr "Swaziland"
+
+#: inc/rules/class-popup-rule-geo.php:1183
+msgid "Sweden"
+msgstr "Sweden"
+
+#: inc/rules/class-popup-rule-geo.php:1185
+msgid "Switzerland"
+msgstr "Switzerland"
+
+#: inc/rules/class-popup-rule-geo.php:1187
+msgid "Syrian Arab Republic"
+msgstr "Syrian Arab Republic"
+
+#: inc/rules/class-popup-rule-geo.php:1189
+msgid "Taiwan, Republic of China"
+msgstr "Taiwan, Republic of China"
+
+#: inc/rules/class-popup-rule-geo.php:1191
+msgid "Tajikistan"
+msgstr "Tajikistan"
+
+#: inc/rules/class-popup-rule-geo.php:1193
+msgid "Tanzania"
+msgstr "Tanzania"
+
+#: inc/rules/class-popup-rule-geo.php:1195
+msgid "Thailand"
+msgstr "Thailand"
+
+#: inc/rules/class-popup-rule-geo.php:1197
+msgid "Timor Leste"
+msgstr "Timor Leste"
+
+#: inc/rules/class-popup-rule-geo.php:1199
+msgid "Togo"
+msgstr "Togo"
+
+#: inc/rules/class-popup-rule-geo.php:1201
+msgid "Tokelau"
+msgstr "Tokelau"
+
+#: inc/rules/class-popup-rule-geo.php:1203
+msgid "Tonga"
+msgstr "Tonga"
+
+#: inc/rules/class-popup-rule-geo.php:1205
+msgid "Trinidad & Tobago"
+msgstr "Trinidad & Tobago"
+
+#: inc/rules/class-popup-rule-geo.php:1207
+msgid "Tunisia"
+msgstr "Tunisia"
+
+#: inc/rules/class-popup-rule-geo.php:1209
+msgid "Turkey"
+msgstr "Turkey"
+
+#: inc/rules/class-popup-rule-geo.php:1211
+msgid "Turkmenistan"
+msgstr "Turkmenistan"
+
+#: inc/rules/class-popup-rule-geo.php:1213
+msgid "Turks And Caicos Islands"
+msgstr "Turks And Caicos Islands"
+
+#: inc/rules/class-popup-rule-geo.php:1215
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#: inc/rules/class-popup-rule-geo.php:1217
+msgid "Uganda"
+msgstr "Uganda"
+
+#: inc/rules/class-popup-rule-geo.php:1219
+msgid "Ukraine"
+msgstr "Ukraine"
+
+#: inc/rules/class-popup-rule-geo.php:1221
+msgid "United Arab Emirates"
+msgstr "United Arab Emirates"
+
+#: inc/rules/class-popup-rule-geo.php:1223
+msgid "United Kingdom"
+msgstr "United Kingdom"
+
+#: inc/rules/class-popup-rule-geo.php:1225
+msgid "US Minor Outlying Islands"
+msgstr "US Minor Outlying Islands"
+
+#: inc/rules/class-popup-rule-geo.php:1227
+msgid "USA"
+msgstr "USA"
+
+#: inc/rules/class-popup-rule-geo.php:1229
+msgid "Upper Volta"
+msgstr "Upper Volta"
+
+#: inc/rules/class-popup-rule-geo.php:1231
+msgid "Uruguay"
+msgstr "Uruguay"
+
+#: inc/rules/class-popup-rule-geo.php:1233
+msgid "Uzbekistan"
+msgstr "Uzbekistan"
+
+#: inc/rules/class-popup-rule-geo.php:1235
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: inc/rules/class-popup-rule-geo.php:1237
+msgid "Vatican City State"
+msgstr "Vatican City State"
+
+#: inc/rules/class-popup-rule-geo.php:1239
+msgid "Venezuela"
+msgstr "Venezuela"
+
+#: inc/rules/class-popup-rule-geo.php:1241
+msgid "Vietnam"
+msgstr "Vietnam"
+
+#: inc/rules/class-popup-rule-geo.php:1243
+msgid "Virgin Islands (British)"
+msgstr "Virgin Islands (British)"
+
+#: inc/rules/class-popup-rule-geo.php:1245
+msgid "Virgin Islands (US)"
+msgstr "Virgin Islands (US)"
+
+#: inc/rules/class-popup-rule-geo.php:1247
+msgid "Wallis And Futuna Islands"
+msgstr "Wallis And Futuna Islands"
+
+#: inc/rules/class-popup-rule-geo.php:1249
+msgid "Western Sahara"
+msgstr "Western Sahara"
+
+#: inc/rules/class-popup-rule-geo.php:1251
+msgid "Yemen Arab Rep."
+msgstr "Yemen Arab Rep."
+
+#: inc/rules/class-popup-rule-geo.php:1253
+msgid "Yemen Democratic"
+msgstr "Yemen Democratic"
+
+#: inc/rules/class-popup-rule-geo.php:1255
+msgid "Yugoslavia"
+msgstr "Yugoslavia"
+
+#: inc/rules/class-popup-rule-geo.php:1257
+msgid "Zaire"
+msgstr "Zaire"
+
+#: inc/rules/class-popup-rule-geo.php:1259
+msgid "Zambia"
+msgstr "Zambia"
+
+#: inc/rules/class-popup-rule-geo.php:1261
+msgid "Zimbabwe"
+msgstr "Zimbabwe"
+
+#: inc/rules/class-popup-rule-popup.php:59
+msgid "PopUp wird weniger als angezeigt"
+msgstr "PopUp shown fewer than"
+
+#: inc/rules/class-popup-rule-popup.php:61
+msgid ""
+"Zeigt das PopUp an, wenn der Benutzer es nur weniger als eine bestimmte Anzahl von Malen gesehen "
+"hat."
+msgstr "Displays the PopUp if the user has seen it fewer than a specific number of times."
+
+#: inc/rules/class-popup-rule-popup.php:143
+msgid "Zeige PopUp so oft an:"
+msgstr "Show PopUp this many times:"
+
+#: inc/rules/class-popup-rule-posttype.php:37
+msgid "Für bestimmte Beitragstypen"
+msgstr "For specific post types"
+
+#: inc/rules/class-popup-rule-posttype.php:38
+msgid "Zeigt das PopUp auf Seiten an, die einem der angegebenen Beitragstypen entsprechen."
+msgstr "Displays the PopUp on pages matching one of the specified post types."
+
+#: inc/rules/class-popup-rule-posttype.php:46
+msgid "Nicht für bestimmte Beitragstypen"
+msgstr "Not for specific post types"
+
+#: inc/rules/class-popup-rule-posttype.php:47
+msgid "Zeigt das PopUp auf Seiten an, die keinem der angegebenen Beitragstypen entsprechen."
+msgstr "Displays the PopUp on pages that do not match any of the specified post types."
+
+#: inc/rules/class-popup-rule-posttype.php:120
+msgid "Für diese Beitragstypen anzeigen:"
+msgstr "Show for these post types:"
+
+#: inc/rules/class-popup-rule-posttype.php:121
+msgid "Auf diesen Beitragstypen-URLs anzeigen:"
+msgstr "Show on these post type URLs:"
+
+#: inc/rules/class-popup-rule-posttype.php:167
+msgid "Für diese Beitragstypen ausblenden:"
+msgstr "Hide for these post types:"
+
+#: inc/rules/class-popup-rule-posttype.php:168
+msgid "Verstecken Sie diese Beitragstypen-URLs:"
+msgstr "Hide on these post type URLs:"
+
+#: inc/rules/class-popup-rule-prosite.php:33
+msgid "Seite ist keine Bloghosting Pro Seite"
+msgstr "Site is not a Bloghosting Pro site"
+
+#: inc/rules/class-popup-rule-prosite.php:34
+msgid "Zeigt das PopUp an, wenn die Seite keine Bloghosting Pro-Seite ist."
+msgstr "Displays the PopUp if the site is not a Bloghosting Pro site."
+
+#: inc/rules/class-popup-rule-prosite.php:92
+#, php-format, python-format
+msgid ""
+"Diese Bedingung erfordert, dass das <a href=\"%s\" target=\"_blank\">PS Bloghosting Plugin </a> "
+"installiert und aktiviert ist."
+msgstr ""
+"This condition requires the <a href=\"%s\" target=\"_blank\">PS Bloghosting plugin </a> to be "
+"installed and activated."
+
+#: inc/rules/class-popup-rule-protectedcontent.php:46
+msgid "Für Mitglieder (PS Mitgliedschaften)"
+msgstr "For members (PS Mitgliedschaften)"
+
+#: inc/rules/class-popup-rule-protectedcontent.php:47
+msgid ""
+"Zeigt das PopUp nur an, wenn der Benutzer eine bestimmte Mitgliedschaft abonniert hat (PS "
+"Mitgliedschaften-Plugin).."
+msgstr ""
+"Displays the PopUp only if the user has a specific membership subscription (PS Mitgliedschaften "
+"plugin)."
+
+#: inc/rules/class-popup-rule-protectedcontent.php:57
+msgid "Für Nichtmitglieder (PS Mitgliedschaften)"
+msgstr "For non-members (PS Mitgliedschaften)"
+
+#: inc/rules/class-popup-rule-protectedcontent.php:59
+msgid ""
+"Zeigt das PopUp nur an, wenn der Benutzer eine bestimmte Mitgliedschaft noch nicht abonniert hat "
+"(PS Mitgliedschaften-Plugin).."
+msgstr ""
+"Displays the PopUp only if the user does not have a specific membership subscription (PS "
+"Mitgliedschaften plugin)."
+
+#: inc/rules/class-popup-rule-protectedcontent.php:187
+msgid "Zeige Benutzern die zu einer der folgenden Mitgliedschaften gehören:"
+msgstr "Show to users who belong to any of the following memberships:"
+
+#: inc/rules/class-popup-rule-protectedcontent.php:281
+msgid "Zeige Benutzern die keiner der folgenden Mitgliedschaften angehören:"
+msgstr "Show to users who do not belong to any of the following memberships:"
+
+#: inc/rules/class-popup-rule-protectedcontent.php:385
+msgid "inaktiv"
+msgstr "inactive"
+
+#: inc/rules/class-popup-rule-protectedcontent.php:431
+#, php-format, python-format
+msgid ""
+"Diese Bedingung erfordert, dass das <a href=\"%s\" target=\"_blank\">PS Mitgliedschaften "
+"Plugin</a> installiert und aktiviert ist."
+msgstr ""
+"This condition requires the <a href=\"%s\" target=\"_blank\">PS Mitgliedschaften plugin</a> to be"
+" installed and activated."
+
+#: inc/rules/class-popup-rule-referrer.php:59
+msgid "Von einem bestimmten Referrer"
+msgstr "From a specific referrer"
+
+#: inc/rules/class-popup-rule-referrer.php:61
+msgid "Zeigt das PopUp an, wenn der Benutzer über einen bestimmten Referrer angekommen ist."
+msgstr "Displays the PopUp when the user arrives from a specific referrer."
+
+#: inc/rules/class-popup-rule-referrer.php:77
+msgid "Nicht von einem bestimmten Referrer"
+msgstr "Not from a specific referrer"
+
+#: inc/rules/class-popup-rule-referrer.php:79
+msgid "Blendet das PopUp aus, wenn der Benutzer über einen bestimmten Referrer angekommen ist."
+msgstr "Hides the PopUp when the user arrives from a specific referrer."
+
+#: inc/rules/class-popup-rule-referrer.php:95
+msgid "Nicht von einem internen Link"
+msgstr "Not from an internal link"
+
+#: inc/rules/class-popup-rule-referrer.php:97
+msgid ""
+"Zeigt das PopUp an, wenn der Benutzer nicht über eine andere Seite Ihrer Website auf diese Seite "
+"gelangt ist."
+msgstr "Displays the PopUp when the user did not arrive on this page from another page on your website."
+
+#: inc/rules/class-popup-rule-referrer.php:113
+msgid "Von einer Suchmaschine"
+msgstr "From a search engine"
+
+#: inc/rules/class-popup-rule-referrer.php:115
+msgid "Zeigt das PopUp an, wenn der Benutzer über eine Suchmaschine angekommen ist."
+msgstr "Displays the PopUp when the user arrives from a search engine."
+
+#: inc/rules/class-popup-rule-referrer.php:193 inc/rules/class-popup-rule-referrer.php:297
+msgid "Referrers. Kann eine vollständige URL oder ein Muster wie \".example.com\" sein (eines pro Zeile):"
+msgstr "Referrers. Can be a full URL or a pattern such as \".example.com\" (one per line):"
+
+#: inc/rules/class-popup-rule-role.php:34
+msgid "Besucher hat Rolle"
+msgstr "Visitor has a role"
+
+#: inc/rules/class-popup-rule-role.php:35
+msgid "Zeigt das PopUp an, wenn der Benutzer angemeldet und einer bestimmten Rolle zugewiesen ist."
+msgstr "Displays the PopUp when the user is logged in and has a specific role."
+
+#: inc/rules/class-popup-rule-role.php:43
+msgid "Besucher hat keine Rolle"
+msgstr "Visitor does not have a role"
+
+#: inc/rules/class-popup-rule-role.php:44
+msgid "Zeigt das PopUp an, wenn der Benutzer angemeldet und keiner bestimmten Rolle zugeordnet ist."
+msgstr "Displays the PopUp when the user is logged in and does not have a specific role."
+
+#: inc/rules/class-popup-rule-role.php:82
+msgid "Zeige Benutzern, die eine dieser Rollen haben:"
+msgstr "Show to users who have any of these roles:"
+
+#: inc/rules/class-popup-rule-role.php:157
+msgid "Zeige  Benutzern, die keine dieser Rollen haben:"
+msgstr "Show to users who do not have any of these roles:"
+
+#: inc/rules/class-popup-rule-taxonomy.php:39
+msgid "Auf benutzerdefinierter Taxonomie"
+msgstr "On a custom taxonomy"
+
+#: inc/rules/class-popup-rule-taxonomy.php:41
+#, php-format, python-format
+msgid ""
+"Zeigt das PopUp auf Seiten an, die einer der angegebenen <strong>%s</strong>-Taxonomien "
+"entsprechen."
+msgstr "Displays the PopUp on pages matching one of the specified <strong>%s</strong> taxonomies."
+
+#: inc/rules/class-popup-rule-taxonomy.php:50
+msgid "Nicht auf benutzerdefinierte Taxonomie"
+msgstr "Not on a custom taxonomy"
+
+#: inc/rules/class-popup-rule-taxonomy.php:52
+#, php-format, python-format
+msgid ""
+"Blendet das PopUp auf Seiten aus, die einer der angegebenen strong>%s</strong>-Taxonomien "
+"entsprechen."
+msgstr "Hides the PopUp on pages matching one of the specified <strong>%s</strong> taxonomies."
+
+#: inc/rules/class-popup-rule-taxonomy.php:137
+msgid "Zeige auf diesen Beitrags-Taxonomien:"
+msgstr "Show on these post taxonomies:"
+
+#: inc/rules/class-popup-rule-taxonomy.php:138
+msgid "Zeige auf diesen Taxonomietyp-URLs an:"
+msgstr "Show on these taxonomy URL types:"
+
+#: inc/rules/class-popup-rule-taxonomy.php:188
+msgid "Verstecke auf diesen Beitrags-Taxonomien:"
+msgstr "Hide on these post taxonomies:"
+
+#: inc/rules/class-popup-rule-taxonomy.php:189
+msgid "Verstecke auf diesen Taxonomietyp URLs:"
+msgstr "Hide on these taxonomy URL types:"
+
+#: inc/rules/class-popup-rule-url.php:161
+msgid "Auf diesen URLs anzeigen (eine pro Zeile):"
+msgstr "Show on these URLs (one per line):"
+
+#: inc/rules/class-popup-rule-url.php:175 inc/rules/class-popup-rule-url.php:295
+msgid "URLs sollten nicht \"http://\" oder \"https://\" enthalten."
+msgstr "URLs should not include \"http://\" or \"https://\"."
+
+#: inc/rules/class-popup-rule-url.php:281
+msgid "Nicht auf diesen URLs (eine pro Zeile):"
+msgstr "Not on these URLs (one per line):"
+
+#: inc/rules/class-popup-rule-user.php:61
+msgid "Zeigt das PopUp an, wenn der Benutzer bei Deiner Seite angemeldet ist."
+msgstr "Displays the PopUp when the user is logged in to your site."
+
+#: inc/rules/class-popup-rule-user.php:79
+msgid "Zeigt das PopUp an, wenn der Benutzer nicht bei Deiner Seite angemeldet ist."
+msgstr "Displays the PopUp when the user is not logged in to your site."
+
+#: inc/rules/class-popup-rule-user.php:95
+msgid "Besucher hat zuvor kommentiert"
+msgstr "Visitor has commented before"
+
+#: inc/rules/class-popup-rule-user.php:97
+msgid ""
+"Zeigt das PopUp an, wenn der Benutzer bereits einen Kommentar hinterlassen hat. Möglicherweise "
+"möchtest Du diese Bedingung mit \"Besucher ist angemeldet\" oder \"Besucher ist nicht "
+"angemeldet\" kombinieren."
+msgstr ""
+"Displays the PopUp when the user has already left a comment. You may want to combine this "
+"condition with \"Visitor is logged in\" or \"Visitor is not logged in\"."
+
+#: inc/rules/class-popup-rule-user.php:123
+msgid ""
+"Zeigt das PopUp an, wenn der Benutzer noch nie einen Kommentar hinterlassen hat. Möglicherweise "
+"möchtest Du diese Bedingung mit \"Besucher ist angemeldet\" oder \"Besucher ist nicht "
+"angemeldet\" kombinieren."
+msgstr ""
+"Displays the PopUp when the user has never left a comment. You may want to combine this condition"
+" with \"Visitor is logged in\" or \"Visitor is not logged in\"."
+
+#: inc/rules/class-popup-rule-width.php:34
+msgid "Abhängig von der Bildschirmgröße"
+msgstr "Depending on screen size"
+
+#: inc/rules/class-popup-rule-width.php:35
+msgid ""
+"Zeigt das PopUp an, wenn die Fensterbreite innerhalb der definierten Grenzen liegt. Hinweis: Die "
+"Fenstergröße wird beim Laden der Seite überprüft! Wenn der Benutzer die Größe des Fensters "
+"ändert, nachdem die Seite geladen wurde wird dies die Regel nicht beeinflussen."
+msgstr ""
+"Displays the PopUp when the window width is within the defined limits. Note: The window size is "
+"checked when the page loads! Resizing the window after the page has loaded will not affect this "
+"rule."
+
+#: inc/rules/class-popup-rule-width.php:211
+msgid "Mindestens:"
+msgstr "Minimum:"
+
+#: inc/rules/class-popup-rule-width.php:243 inc/rules/class-popup-rule-width.php:283
+msgid "Alle Größen"
+msgstr "All sizes"
+
+#: inc/rules/class-popup-rule-width.php:251
+msgid "Maximal:"
+msgstr "Maximum:"
+
+#: inc/rules/class-popup-rule-xprofile.php:63
+msgid "Beim XProfile-Match"
+msgstr "On an XProfile match"
+
+#: inc/rules/class-popup-rule-xprofile.php:65
+msgid "Zeigt das PopUp an, wenn das XProfile-Feld des Benutzers der Bedingung entspricht."
+msgstr "Displays the PopUp when the user's XProfile field matches the condition."
+
+#: inc/rules/class-popup-rule-xprofile.php:81
+msgid "Nicht bei XProfile Match"
+msgstr "Not on an XProfile match"
+
+#: inc/rules/class-popup-rule-xprofile.php:83
+msgid "Zeigt das PopUp an, wenn das XProfile-Feld des Benutzers nicht der Bedingung entspricht."
+msgstr "Displays the PopUp when the user's XProfile field does not match the condition."
+
+#: inc/rules/class-popup-rule-xprofile.php:371
+msgid "Diese Bedingung erfordert, dass die BuddyPress Extended Profile-Komponente aktiv ist."
+msgstr "This condition requires the BuddyPress Extended Profile component to be active."
+
+#: inc/rules/class-popup-rule-xprofile.php:401
+msgid "Keine XProfile-Felder gefunden."
+msgstr "No XProfile fields found."
+
+#: inc/rules/class-popup-rule-xprofile.php:411
+msgid "Feld:"
+msgstr "Field:"
+
+#: inc/rules/class-popup-rule-xprofile.php:451
+msgid "gleich"
+msgstr "equals"
+
+#: inc/rules/class-popup-rule-xprofile.php:457
+msgid "ist nicht"
+msgstr "does not equal"
+
+#: inc/rules/class-popup-rule-xprofile.php:463
+msgid "entspricht Regex"
+msgstr "matches regex"
+
+#: inc/rules/class-popup-rule-xprofile.php:469
+msgid "stimmt nicht mit Regex überein"
+msgstr "does not match regex"
+
+#: views/info-shortcodes.php:95
+msgid ""
+"Du kannst alle Deine Shortcodes in den PopUp-Inhalten verwenden. Einige Plugins oder Themes "
+"bieten jedoch möglicherweise Shortcodes dafür Funktioniert nur mit der Lademethode \"Footer\".<br"
+" /> In dieser Liste wird erläutert, welche Shortcodes jeweils verwendet werden können "
+"Lademethode:"
+msgstr ""
+"You can use all your shortcodes in PopUp content. However, some plugins or themes may provide "
+"shortcodes that only work with the \"Page Footer\" loading method.<br /> This list explains which"
+" shortcodes can be used with each loading method:"
+
+#: views/info-shortcodes.php:119
+msgid ""
+"Wichtiger Hinweis für Shortcodes in <strong> Globale PopUps</strong>:<br />Shortcodes können von "
+"einem Plugin oder Theme bereitgestellt werden, sodass jedes Blog eine andere Liste von Shortcodes"
+" haben kann. Die folgende Liste gilt nur für den aktuellen Blog!"
+msgstr ""
+"Important note about shortcodes in <strong> Global PopUps</strong>:<br />Shortcodes can be "
+"provided by a plugin or theme, so each site may have a different list of shortcodes. The "
+"following list applies only to the current site!"
+
+#: views/info-shortcodes.php:157
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: views/info-shortcodes.php:165
+msgid "Lademethode 'Seiten Footer'"
+msgstr "Loading method 'Page Footer'"
+
+#: views/info-shortcodes.php:167
+msgid "Page Footer"
+msgstr "Page Footer"
+
+#: views/info-shortcodes.php:175
+msgid "Lademethode 'WordPress AJAX'"
+msgstr "Loading method 'WordPress AJAX'"
+
+#: views/info-shortcodes.php:177
+msgid "WP AJAX"
+msgstr "WP AJAX"
+
+#: views/info-shortcodes.php:185
+msgid "Lademethode 'Benutzerdefiniertes AJAX'"
+msgstr "Loading method 'Custom AJAX'"
+
+#: views/info-shortcodes.php:187
+msgid "Cust AJAX"
+msgstr "Cust AJAX"
+
+#: views/info-shortcodes.php:195
+msgid "Lademethode 'Anonymes Skript'"
+msgstr "Loading method 'Anonymous Script'"
+
+#: views/info-shortcodes.php:197
+msgid "Skript"
+msgstr "Script"
+
+#: views/info-shortcodes.php:205
+msgid "Beim Öffnen einer PopUp-Vorschau im Editor"
+msgstr "When opening a PopUp preview in the editor"
+
+#: views/info-shortcodes.php:247
+msgid "Shortcode unterstützt"
+msgstr "Shortcode supported"
+
+#: views/info-shortcodes.php:255
+msgid "Könnte Probleme haben"
+msgstr "May cause problems"
+
+#: views/info-shortcodes.php:263
+msgid "Shortcode funktioniert nicht"
+msgstr "Shortcode does not work"
+
+#: views/meta-appearance.php:33
+msgid "Wähle den Stil aus, den Du verwenden möchtest:"
+msgstr "Choose the style you want to use:"
+
+#: views/meta-appearance.php:93
+msgid ""
+"*) Dieser Stil ist veraltet und unterstützt nicht alle Optionen auf dieser Seite. Sobald Du Dein "
+"PopUp mit einem neuen Stil gespeichert hast, kannst Du es nicht mehr zu diesem Stil "
+"zurückkehren!<br />Tipp: Verwende die Vorschaufunktion, um dieses PopUp mit einem der neuen Stile"
+" zu testen vor dem Speichern."
+msgstr ""
+"*) This style is deprecated and does not support all the options on this page. Once you save your"
+" PopUp with a new style, you cannot switch back to this style!<br />Tip: Use the preview feature "
+"to test this PopUp with one of the new styles before saving."
+
+#: views/meta-appearance.php:137
+msgid "Verwende benutzerdefinierte Farben"
+msgstr "Use custom colors"
+
+#: views/meta-appearance.php:159
+msgid "Links, Schaltflächenhintergrund, Überschrift und Unterüberschrift"
+msgstr "Links, button background, heading and subheading"
+
+#: views/meta-appearance.php:175
+msgid "Schaltflächentext"
+msgstr "Button text"
+
+#: views/meta-appearance.php:199
+msgid "Benutzerdefinierte Größe verwenden (wenn ausgewählt, reagiert PopUp nicht responsiv)"
+msgstr "Use a custom size (if selected, the PopUp will not be responsive)"
+
+#: views/meta-appearance.php:211
+msgid "Breite:"
+msgstr "Width:"
+
+#: views/meta-appearance.php:229
+msgid "Höhe:"
+msgstr "Height:"
+
+#: views/meta-appearance.php:265
+msgid "Ermögliche das Scrollen der Seite, während PopUp sichtbar ist"
+msgstr "Allow page scrolling while the PopUp is visible"
+
+#: views/meta-appearance.php:285
+msgid "PopUp-Display-Animation"
+msgstr "PopUp opening animation"
+
+#: views/meta-appearance.php:295
+msgid "PopUp-Abschlussanimation"
+msgstr "PopUp closing animation"
+
+#: views/meta-appearance.php:371
+msgid "PRO Version"
+msgstr "PRO Version"
+
+#: views/meta-behavior.php:13
+msgid "Wann soll das PopUp angezeigt werden?"
+msgstr "When should the PopUp be displayed?"
+
+#: views/meta-behavior.php:26 views/meta-behavior.php:58
+msgid "Anzeigen nach"
+msgstr "Show after"
+
+#: views/meta-behavior.php:40
+msgid "Sekunden"
+msgstr "seconds"
+
+#: views/meta-behavior.php:44
+msgid "Minuten"
+msgstr "minutes"
+
+#: views/meta-behavior.php:72
+msgid "%"
+msgstr "%"
+
+#: views/meta-behavior.php:76
+msgid "px"
+msgstr "px"
+
+#: views/meta-behavior.php:80
+msgid "der Seite wurde gescrollt."
+msgstr "of the page has been scrolled."
+
+#: views/meta-behavior.php:91
+msgid "Erscheint, nachdem der Benutzer bis zur CSS-Auswahl gescrollt hat"
+msgstr "Show after the user scrolls to an element matching a CSS selector"
+
+#: views/meta-behavior.php:109
+msgid "\"Diese Meldung nicht mehr anzeigen\" Einstellungen:"
+msgstr "\"Do not show this message again\" settings:"
+
+#: views/meta-behavior.php:122
+msgid "Fügt \"Diese Meldung nicht mehr anzeigen\" Link hinzu"
+msgstr "Add a \"Do not show this message again\" link"
+
+#: views/meta-behavior.php:134
+msgid "Die Schaltfläche \"Schließen\" fungiert als \"Diese Meldung nicht mehr anzeigen\" Link"
+msgstr "Use the \"Close\" button as a \"Do not show this message again\" link"
+
+#: views/meta-behavior.php:140
+msgid "Ablaufdatum"
+msgstr "Expiration"
+
+#: views/meta-behavior.php:147
+msgid "Tage"
+msgstr "days"
+
+#: views/meta-behavior.php:148
+msgid "(Nach Ablauf sieht der Benutzer dieses PopUp wieder)"
+msgstr "(After expiration, the user will see this PopUp again)"
+
+#: views/meta-behavior.php:157
+msgid "Popup-Schließen Bedingungen"
+msgstr "PopUp closing conditions"
+
+#: views/meta-behavior.php:168
+msgid "Klicken auf den Hintergrund schließt PopUp nicht."
+msgstr "Clicking the background does not close the PopUp."
+
+#: views/meta-behavior.php:184
+msgid "Formular senden"
+msgstr "Form submission"
+
+#: views/meta-behavior.php:191
+msgid ""
+"Falls Dein PopUp ein Formular enthält (z. B. ein Kontaktformular), kannst Du hier das Verhalten "
+"beim Senden von Formularen ändern."
+msgstr ""
+"If your PopUp contains a form (such as a contact form), you can change what happens when the form"
+" is submitted here."
+
+#: views/meta-behavior.php:198
+msgid "Schließe immer nach dem Absenden des Formulars"
+msgstr "Always close after form submission"
+
+#: views/meta-behavior.php:201
+msgid "PopUp aktualisieren oder schließen (Standard)"
+msgstr "Refresh or close PopUp (default)"
+
+#: views/meta-behavior.php:205
+msgid "PopUp aktualisieren oder nichts tun (für Ajax Formulare verwenden)"
+msgstr "Refresh PopUp or do nothing (use for AJAX forms)"
+
+#: views/meta-behavior.php:209
+msgid "Umleiten auf eine Ziel-URL"
+msgstr "Redirect to a destination URL"
+
+#: views/meta-content.php:29
+msgid "Überschrift (optional)"
+msgstr "Heading (optional)"
+
+#: views/meta-content.php:35
+msgid "Unterüberschrift (optional)"
+msgstr "Subheading (optional)"
+
+#: views/meta-content.php:53
+msgid "Gib hier Deine Überschrift ein ..."
+msgstr "Enter your heading here ..."
+
+#: views/meta-content.php:69
+msgid "Gib hier Deine Unterüberschrift ein ..."
+msgstr "Enter your subheading here ..."
+
+#: views/meta-content.php:83
+msgid "PopUp-Hauptinhalt"
+msgstr "PopUp main content"
+
+#: views/meta-content.php:113
+msgid "Call To Action Schaltfläche (optional)"
+msgstr "Call to Action button (optional)"
+
+#: views/meta-content.php:131
+msgid "Schaltfläche Label"
+msgstr "Button label"
+
+#: views/meta-content.php:147
+msgid "Schaltfläche Link (https://www.example.com)"
+msgstr "Button link (https://www.example.com)"
+
+#: views/meta-content.php:163
+msgid "Optionales Link-Ziel"
+msgstr "Optional link target"
+
+#: views/meta-content.php:165
+msgid "Standard: _self / Um den Link in einem neuen Fenster zu öffnen, verwende: _blank"
+msgstr "Default: _self / To open the link in a new window, use: _blank"
+
+#: views/meta-content.php:185
+msgid "PopUp Bild (optional)"
+msgstr "PopUp image (optional)"
+
+#: views/meta-content.php:197
+msgid "Füge PopUp ein ausgewähltes Bild hinzu."
+msgstr "Add a featured image to the PopUp."
+
+#: views/meta-content.php:199
+msgid "PopUp Bild"
+msgstr "PopUp image"
+
+#: views/meta-content.php:201
+msgid "Bild wählen"
+msgstr "Choose Image"
+
+#: views/meta-content.php:205
+msgid "Bild hinzufügen"
+msgstr "Add Image"
+
+#: views/meta-content.php:243
+msgid "(Kein Bild ausgewählt)"
+msgstr "(No image selected)"
+
+#: views/meta-content.php:249
+msgid "Drop hier"
+msgstr "Drop here"
+
+#: views/meta-content.php:261
+msgid "Entferne Bild"
+msgstr "Remove Image"
+
+#: views/meta-content.php:289
+msgid "Bild für mobile Geräte ausblenden"
+msgstr "Hide image on mobile devices"
+
+#: views/meta-customcss.php:27
+msgid "Stelle benutzerdefinierte CSS-Regeln bereit, um dieses PopUp anzupassen"
+msgstr "Provide custom CSS rules to customize this PopUp"
+
+#: views/meta-customcss.php:59
+msgid ""
+"Hinweis: Um auf dieses PopUp abzuzielen, musst Du allen Regeln ein Präfix voranstellen "
+"<code>#popup</code>, z.B: <code>#popup .wdpu-text { font-family: sans }</code>"
+msgstr ""
+"Note: To target this PopUp, prefix all rules with <code>#popup</code>, e.g.: <code>#popup .wdpu-"
+"text { font-family: sans }</code>"
+
+#: views/meta-rules.php:25 views/settings.php:455
+msgid "Verfügbare Bedingungen"
+msgstr "Available conditions"
+
+#: views/meta-rules.php:31
+msgid "Zeige dieses PopUp an, wenn alle folgenden Bedingungen erfüllt sind"
+msgstr "Show this PopUp when all of the following conditions are met"
+
+#: views/meta-submitdiv.php:17 views/meta-submitdiv.php:64 views/meta-submitdiv.php:84
+msgid "Speichern"
+msgstr "Save"
+
+#: views/meta-submitdiv.php:29
+msgid "Status: <strong>Aktiv</strong>"
+msgstr "Status: <strong>Active</strong>"
+
+#: views/meta-submitdiv.php:30
+msgid "Status: Inaktiv"
+msgstr "Status: Inactive"
+
+#: views/meta-submitdiv.php:38 views/meta-submitdiv.php:91
+msgid "Vorschau PopUp"
+msgstr "Preview PopUp"
+
+#: views/meta-submitdiv.php:50 views/meta-submitdiv.php:76
+msgid "Ab in den Müll"
+msgstr "Move to Trash"
+
+#: views/meta-submitdiv.php:59 views/meta-submitdiv.php:99
+msgid "Duplizieren"
+msgstr "Duplicate"
+
+#: views/network.php:67
+#, php-format
+msgid ""
+"Bitte beachte:<br/> Wir haben die globalen PopUp-Menüelemente verschoben zum "
+"<strong>Hauptblog</strong> Deines Multisite Netzwerks!<br />Der Hauptblog dieses Netzwerks ist "
+"\"%1$s\" - <a href=\"%2$s\">Gehe jetzt zum Hauptblog</a>!"
+msgstr ""
+"Please note:<br/> We have moved the global PopUp menu items to the <strong>main site</strong> of "
+"your multisite network!<br />The main site of this network is \"%1$s\" - <a href=\"%2$s\">Go to "
+"the main site now</a>!"
+
+#: views/network.php:95
+msgid ""
+"Weil die Menüpunkte \"PopUp\" hier auf der <strong>Netzwerk Admin Seite</strong> werden nicht "
+"mehr verwendet Du kannst sie jederzeit <strong>ausblenden</strong>:"
+msgstr ""
+"The \"PopUp\" menu items here in the <strong>Network Admin</strong> are no longer used. You can "
+"<strong>hide</strong> them at any time:"
+
+#: views/network.php:111
+msgid "Verstecke die Menüpunkte hier!"
+msgstr "Hide the menu items here!"
+
+#: views/settings.php:63
+msgid ""
+"<strong>Benutzerdefinierter Webservice</strong>: Du hast einen benutzerdefinierten Suchdienst in "
+"<tt>wp-config.php</tt> über die Konstante \"<tt>PO_REMOTE_IP_URL</tt>\" konfiguriert. Um einen "
+"der Standarddienste zu verwendenmusst Du diese Konstante aus wp-config.php entfernen."
+msgstr ""
+"<strong>Custom web service</strong>: You have configured a custom lookup service in <tt>wp-"
+"config.php</tt> using the \"<tt>PO_REMOTE_IP_URL</tt>\" constant. To use one of the default "
+"services, remove this constant from wp-config.php."
+
+#: views/settings.php:113
+msgid "PopUp Einstellungen"
+msgstr "PopUp Settings"
+
+#: views/settings.php:135
+msgid "PopUp Lademethode"
+msgstr "PopUp loading method"
+
+#: views/settings.php:145
+msgid "Wähle aus, wie Du PopUp laden möchtest."
+msgstr "Choose how you want to load the PopUp."
+
+#: views/settings.php:167
+msgid "Lade PopUp mit"
+msgstr "Load PopUp using"
+
+#: views/settings.php:233
+msgid "Ländersuche"
+msgstr "Country lookup"
+
+#: views/settings.php:245
+msgid "Benutzerdefinierter Webservice"
+msgstr "Custom web service"
+
+#: views/settings.php:257
+msgid "Webservice"
+msgstr "Web service"
+
+#: views/settings.php:277
+msgid "Lokale Datenbank"
+msgstr "Local database"
+
+#: views/settings.php:285
+msgid "Lokale IP-Nachschlagetabelle"
+msgstr "Local IP lookup table"
+
+#: views/settings.php:297
+msgid "Teste meinen Standort"
+msgstr "Test my location"
+
+#: views/settings.php:343
+msgid "Diese Option ist relevant für die Bedingung \"Besucherlocation\"."
+msgstr "This option is relevant to the visitor location condition."
+
+#: views/settings.php:379
+msgid "Theme-Kompatibilität"
+msgstr "Theme compatibility"
+
+#: views/settings.php:389
+msgid "Hier kannst Du sehen, ob Dein Theme mit der Lademethode\"Footer\"  kompatibel ist."
+msgstr "Here you can check whether your theme is compatible with the \"Page Footer\" loading method."
+
+#: views/settings.php:427
+msgid "Unterstützte Shortcodes"
+msgstr "Supported shortcodes"
+
+#: views/settings.php:447 views/settings.php:637
+msgid "Alle Änderungen speichern"
+msgstr "Save All Changes"
+
+#: views/settings.php:477
+msgid "Name"
+msgstr "Name"
+
+#: views/settings.php:483
+msgid "Aktivierte Regeln"
+msgstr "Enabled rules"
+
+#: views/settings.php:537
+msgid "Not available for global PopUps"
+msgstr "Not available for global PopUps"
+

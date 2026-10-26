@@ -62,9 +62,23 @@ Wenn Du Deine Mailingliste aufbaust, den Umsatz steigerst oder eine Veranstaltun
 </ul>
 
 
+== Sprachen ==
+
+Die Plugin-Texte sind standardmäßig überwiegend deutsch. Eine vollständige Übersetzung
+für Englisch (USA, en_US) wird im Verzeichnis lang/ mitgeliefert:
+
+* popover-en_US.po: bearbeitbare englische Übersetzung.
+* popover-en_US.mo: kompilierte Übersetzung, die WordPress automatisch lädt.
+* popover.pot: Vorlage für weitere Übersetzungen der Textdomain popover.
+
+Wähle in WordPress unter Einstellungen > Allgemein die Website-Sprache
+"English (United States)". Für die Verwaltungsoberfläche kann die Sprache
+auch im Benutzerprofil eingestellt werden.
+
 == ChangeLog ==
 
 = 1.0.1 =
+* Neu: Vollständige englische Übersetzung (en_US) mit PO-/MO-Dateien und POT-Vorlage ergänzt.
 * Fix: CSS-Worker-Modultabelle gegen geerbte Eigenschaften abgesichert und dynamisches Nachladen externer Module entfernt.
 * Fix: Fehlendes Backslash-Escaping in Select2-Ereignis-Namespaces ergänzt.
 * Fix: Nachrichten-Dispatcher des CSS-Workers auf erlaubte Methoden und die CSS-Worker-Klasse beschränkt.

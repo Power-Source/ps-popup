@@ -7,8 +7,8 @@
  * Version:     1.0.1
  * Author:      PSOURCE
  * Author URI:  https://psource.eimen.net/
- * Textdomain:  popover
- * Domain Path: lang
+ * Text Domain: popover
+ * Domain Path: /lang
  */
 
 /**
