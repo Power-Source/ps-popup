@@ -2,7 +2,7 @@
 
 **Deutsch** | [English](README.en.md)
 
-[![Version](https://img.shields.io/badge/Version-1.0.1-2271b1?style=flat-square)](readme.txt)
+[![Version](https://img.shields.io/badge/Version-1.0.2-2271b1?style=flat-square)](readme.txt)
 ![PHP](https://img.shields.io/badge/PHP-8.0%2B-777bb4?style=flat-square&logo=php&logoColor=white)
 ![WordPress](https://img.shields.io/badge/WordPress-bis%207.1.0-21759b?style=flat-square&logo=wordpress&logoColor=white)
 ![ClassicPress](https://img.shields.io/badge/ClassicPress-2.7.4-03768e?style=flat-square)
@@ -206,7 +206,7 @@ Fehlerberichte und Änderungsvorschläge sind über die [GitHub Issues](https://
 
 ## Änderungen
 
-Version **1.0.1** ergänzt die englische Übersetzung und enthält Korrekturen für den Ace-Editor, die CSS-Worker-Verarbeitung, das Select2-Escaping sowie das Pointer-Polyfill. Das Änderungsprotokoll steht in [readme.txt](./readme.txt).
+Version **1.0.2** ergänzt die englische Übersetzung und die deutsch-/englischsprachige Dokumentation. Sie korrigiert das Regex-Backtracking im Ace-Editor und im Select2-Regressionstest, sichert die CSS-Worker-Verarbeitung ab und vervollständigt das Select2-Escaping. Die Übersetzungsheader wurden korrigiert und gezielte Regressionstests ergänzt. Das Änderungsprotokoll steht in [readme.txt](./readme.txt).
 
 ## Lizenz
 

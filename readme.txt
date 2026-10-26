@@ -4,7 +4,7 @@ Tags: widget, custom,post, wordpress, classicpress
 Requires at least: 4.9
 Tested up to: 7.1
 ClassicPress: 2.7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.2
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -77,12 +77,19 @@ auch im Benutzerprofil eingestellt werden.
 
 == ChangeLog ==
 
-= 1.0.1 =
+= 1.0.2 =
 * Neu: Vollständige englische Übersetzung (en_US) mit PO-/MO-Dateien und POT-Vorlage ergänzt.
+* Neu: Ausführliche README auf Deutsch und Englisch mit Sprachumschalter, Installationsanleitung und Entwicklerhinweisen ergänzt.
+* Fix: WordPress-konforme Text-Domain- und Domain-Path-Header für die Übersetzung der Plugin-Metadaten korrigiert.
 * Fix: CSS-Worker-Modultabelle gegen geerbte Eigenschaften abgesichert und dynamisches Nachladen externer Module entfernt.
 * Fix: Fehlendes Backslash-Escaping in Select2-Ereignis-Namespaces ergänzt.
-* Fix: Nachrichten-Dispatcher des CSS-Workers auf erlaubte Methoden und die CSS-Worker-Klasse beschränkt.
+* Fix: Nachrichten-Dispatcher des CSS-Workers auf erlaubte Methoden und die CSS-Worker-Klasse beschränkt; Argumentlisten werden validiert.
 * Fix: Exponentielles Regex-Backtracking im Ace-Editor bei nicht geschlossenen Zeichenklassen verhindert.
+* Fix: Exponentielles Regex-Backtracking bei der Quelltextauswertung im Select2-Regressionstest verhindert.
+* Tests: Regressionstests für Ace-Tokenizer, CSS-Worker, Select2-Escaping und englische Sprachdateien ergänzt.
+* Build: Minifizierte Ace-, CSS-Worker- und Select2-Dateien mit den Korrekturen neu erzeugt.
+
+= 1.0.1 =
 * Fix: Pointer-Polyfill hinzugefügt: JS/CSS für verbesserte Funktionalität und Styling aktualisiert
 
 = 1.0.0 =
