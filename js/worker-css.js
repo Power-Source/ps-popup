@@ -187,15 +187,30 @@
     window.onmessage = function(e) {
         var msg = e.data;
         if (msg.command) {
-            if (main[msg.command])
-                main[msg.command].apply(main, msg.args);
-            else
-                throw new Error("Unknown command:" + msg.command);
+            if (!main)
+                throw new Error("Worker is not initialized");
+            var method;
+            switch (msg.command) {
+                case "setValue": method = main.setValue; break;
+                case "getValue": method = main.getValue; break;
+                case "setTimeout": method = main.setTimeout; break;
+                case "setInfoRules": method = main.setInfoRules; break;
+                case "setDisabledRules": method = main.setDisabledRules; break;
+                case "onUpdate": method = main.onUpdate; break;
+                case "isPending": method = main.isPending; break;
+                default:
+                    throw new Error("Unknown worker command");
+            }
+            if (msg.args != null && !Array.isArray(msg.args))
+                throw new Error("Worker command arguments must be an array");
+            method.apply(main, msg.args);
         } else if (msg.init) {
+            if (msg.module !== "ace/mode/css_worker" || msg.classname !== "Worker")
+                throw new Error("Unknown worker module or class");
             initBaseUrls(msg.tlns);
             require("ace/lib/es5-shim");
             sender = window.sender = initSender();
-            var clazz = require(msg.module)[msg.classname];
+            var clazz = require("ace/mode/css_worker").Worker;
             main = window.main = new clazz(sender);
         } else if (msg.event && sender) {
             sender._signal(msg.event, msg.data);

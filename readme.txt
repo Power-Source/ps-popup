@@ -2,7 +2,7 @@
 Contributors: DerN3rd (PSOURCE)
 Tags: widget, custom,post, wordpress, classicpress
 Requires at least: 4.9
-Tested up to: 6.8.1
+Tested up to: 7.1
 ClassicPress: 2.7.0
 Stable tag: 1.0.0
 Requires PHP: 7.0
@@ -66,6 +66,8 @@ Wenn Du Deine Mailingliste aufbaust, den Umsatz steigerst oder eine Veranstaltun
 
 = 1.0.1 =
 
+* Fix: Nachrichten-Dispatcher des CSS-Workers auf erlaubte Methoden und die CSS-Worker-Klasse beschränkt.
+* Fix: Exponentielles Regex-Backtracking im Ace-Editor bei nicht geschlossenen Zeichenklassen verhindert.
 * Fix: Pointer-Polyfill hinzugefügt: JS/CSS für verbesserte Funktionalität und Styling aktualisiert
 
 = 1.0.0 =

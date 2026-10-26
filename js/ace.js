@@ -5118,7 +5118,7 @@ ace.define("ace/tokenizer", ["require", "exports", "module"], function(require, 
 
         this.removeCapturingGroups = function(src) {
             var r = src.replace(
-                /\[(?:\\.|[^\]])*?\]|\\.|\(\?[:=!]|(\()/g,
+                /\[(?:\\.|[^\]\\])*?\]|\\.|\(\?[:=!]|(\()/g,
                 function(x, y) {
                     return y ? "(?:" : x;
                 }
