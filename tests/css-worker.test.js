@@ -8,6 +8,7 @@ const vm = require("node:vm");
 for (const file of ["worker-css.js", "worker-css.min.js"]) {
     const messages = [];
     const context = vm.createContext({
+        assert,
         postMessage: message => messages.push(message),
         setTimeout: () => 1,
         clearTimeout: () => {},
@@ -16,6 +17,35 @@ for (const file of ["worker-css.js", "worker-css.min.js"]) {
     vm.runInContext(fs.readFileSync(path.join(__dirname, "../js", file), "utf8"), context);
     const send = message => context.onmessage({ data: message });
     const command = (name, args) => send({ command: name, args });
+
+    assert.equal(Object.getPrototypeOf(context.require.modules), null);
+    for (const id of ["__proto__", "constructor", "toString", "hasOwnProperty",
+        "missing", "https://example.invalid/worker", "//example.invalid/worker"]) {
+        assert.throws(() => context.require(id), /Unknown worker module/);
+    }
+    for (const id of [42, {}, ["ace/lib/oop"]]) {
+        assert.throws(() => context.require(id), /accepts only/);
+    }
+    vm.runInContext(`
+        Object.prototype.inheritedWorkerModule = {
+            factory: function() { throw new Error("Inherited factory executed"); }
+        };
+        try {
+            assert.throws(function() {
+                require("inheritedWorkerModule");
+            }, /Unknown worker module/);
+            assert.equal(Object.prototype.inheritedWorkerModule.initialized, undefined);
+            assert.equal(Object.prototype.inheritedWorkerModule.exports, undefined);
+            assert.equal(Object.prototype.hasOwnProperty.call(Object.prototype, "initialized"), false);
+            assert.equal(Object.prototype.hasOwnProperty.call(Object.prototype, "exports"), false);
+        } finally {
+            delete Object.prototype.inheritedWorkerModule;
+        }
+    `, context);
+    for (const id of Object.keys(context.require.modules)) {
+        assert.ok(context.require(id), file + ": bundled module loads: " + id);
+    }
+    assert.equal(context.require("ace/mode/css_worker", "../lib/oop"), context.require("ace/lib/oop"));
 
     assert.throws(() => command("setValue", [""]), /not initialized/);
     for (const [module, classname] of [
@@ -27,7 +57,12 @@ for (const file of ["worker-css.js", "worker-css.min.js"]) {
         assert.throws(() => send({ init: true, module, classname }), /Unknown worker module or class/);
         assert.equal(context.main, null);
     }
-    send({ init: true, module: "ace/mode/css_worker", classname: "Worker" });
+    send({
+        init: true,
+        module: "ace/mode/css_worker",
+        classname: "Worker",
+        tlns: { ace: "https://example.invalid" }
+    });
 
     for (const name of ["constructor", "toString", "hasOwnProperty", "__defineGetter__",
         "__proto__", "doc", "sender", "nonexistent", ["setValue"]]) {
@@ -58,5 +93,5 @@ for (const file of ["worker-css.js", "worker-css.min.js"]) {
     });
     command("getValue", [43]);
     assert.equal(messages.at(-1).data, "/*a { color: red; }");
-    console.log(file + ": command validation, initialization, callbacks, CSS linting and changes passed");
+    console.log(file + ": module isolation, bundled dependencies, command validation, CSS linting and changes passed");
 }

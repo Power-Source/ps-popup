@@ -60,13 +60,13 @@
             id = parentId;
             parentId = null;
         }
-        if (!id.charAt)
+        if (typeof id != "string")
             throw new Error("worker.js require() accepts only (parentId, id) as arguments");
 
         id = window.normalizeModule(parentId, id);
 
-        var module = window.require.modules[id];
-        if (module) {
+        if (Object.prototype.hasOwnProperty.call(window.require.modules, id)) {
+            var module = window.require.modules[id];
             if (!module.initialized) {
                 module.initialized = true;
                 module.exports = module.factory().exports;
@@ -74,18 +74,9 @@
             return module.exports;
         }
 
-        var chunks = id.split("/");
-        if (!window.require.tlns)
-            return console.log("unable to load " + id);
-        chunks[0] = window.require.tlns[chunks[0]] || chunks[0];
-        var path = chunks.join("/") + ".js";
-
-        window.require.id = id;
-        importScripts(path);
-        return window.require(parentId, id);
+        throw new Error("Unknown worker module: " + id);
     };
-    window.require.modules = {};
-    window.require.tlns = {};
+    window.require.modules = Object.create(null);
 
     window.define = function(id, deps, factory) {
         if (arguments.length == 2) {
@@ -145,10 +136,6 @@
     };
     window.define.amd = {};
 
-    window.initBaseUrls = function initBaseUrls(topLevelNamespaces) {
-        require.tlns = topLevelNamespaces;
-    };
-
     window.initSender = function initSender() {
 
         var EventEmitter = window.require("ace/lib/event_emitter").EventEmitter;
@@ -207,7 +194,6 @@
         } else if (msg.init) {
             if (msg.module !== "ace/mode/css_worker" || msg.classname !== "Worker")
                 throw new Error("Unknown worker module or class");
-            initBaseUrls(msg.tlns);
             require("ace/lib/es5-shim");
             sender = window.sender = initSender();
             var clazz = require("ace/mode/css_worker").Worker;
