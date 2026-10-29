@@ -20,15 +20,18 @@ class TheLib_Net extends TheLib {
 	 */
 	public function current_url( $protocol = null ) {
 		static $Url = array();
-
+
 		if ( null !== $protocol ) {
 			// Remove the "://" part, if it was provided
-			$protocol = array_shift( explode( ':', $protocol ) );
-		}
-
-		if ( ! isset( $Url[$protocol] ) ) {
-			if ( null === $protocol ) {
-				$cur_url = 'http';
+			$protocol_parts = explode( ':', $protocol );
+			$protocol = array_shift( $protocol_parts );
+		}
+
+		$cache_key = null === $protocol ? '' : $protocol;
+
+		if ( ! isset( $Url[$cache_key] ) ) {
+			if ( null === $protocol ) {
+				$cur_url = 'http';
 
 				if ( isset( $_SERVER['HTTPS'] )
 					&& 'on' == strtolower( $_SERVER['HTTPS'] )
@@ -65,10 +68,10 @@ class TheLib_Net extends TheLib {
 				$cur_url .= $_SERVER['REQUEST_URI'];
 			}
 
-			$Url[$protocol] = $cur_url;
+			$Url[$cache_key] = $cur_url;
 		}
 
-		return $Url[$protocol];
+		return $Url[$cache_key];
 	}
 
 	/**

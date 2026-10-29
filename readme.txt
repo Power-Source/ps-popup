@@ -2,7 +2,7 @@
 Contributors: DerN3rd (PSOURCE)
 Tags: widget, custom,post, wordpress, classicpress
 Requires at least: 4.9
-Tested up to: 7.1
+Tested up to: 7.1.4
 ClassicPress: 2.7.4
 Stable tag: 1.0.2
 Requires PHP: 7.0
@@ -76,6 +76,10 @@ Wähle in WordPress unter Einstellungen > Allgemein die Website-Sprache
 auch im Benutzerprofil eingestellt werden.
 
 == ChangeLog ==
+
+= 1.0.3 =
+* Fix: PHP-8.4-Deprecation in der URL-Ermittlung behoben, indem für den impliziten Protokoll-Cache ein leerer String statt null verwendet wird.
+* Fix: PHP-Hinweis bei der Normalisierung explizit übergebener URL-Protokolle verhindert.
 
 = 1.0.2 =
 * Neu: Vollständige englische Übersetzung (en_US) mit PO-/MO-Dateien und POT-Vorlage ergänzt.

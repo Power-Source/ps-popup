@@ -2,9 +2,9 @@
 
 **Deutsch** | [English](README.en.md)
 
-[![Version](https://img.shields.io/badge/Version-1.0.2-2271b1?style=flat-square)](readme.txt)
+[![Version](https://img.shields.io/badge/Version-1.0.3-2271b1?style=flat-square)](readme.txt)
 ![PHP](https://img.shields.io/badge/PHP-8.0%2B-777bb4?style=flat-square&logo=php&logoColor=white)
-![WordPress](https://img.shields.io/badge/WordPress-bis%207.1.0-21759b?style=flat-square&logo=wordpress&logoColor=white)
+![WordPress](https://img.shields.io/badge/WordPress-bis%207.1.4-21759b?style=flat-square&logo=wordpress&logoColor=white)
 ![ClassicPress](https://img.shields.io/badge/ClassicPress-2.7.4-03768e?style=flat-square)
 [![Lizenz](https://img.shields.io/badge/Lizenz-GPL--2.0--or--later-2ea44f?style=flat-square)](https://www.gnu.org/licenses/gpl-2.0.html)
 
@@ -205,6 +205,8 @@ Fehlerberichte und Änderungsvorschläge sind über die [GitHub Issues](https://
 - relevante Fehlermeldungen ohne Zugangsdaten oder personenbezogene Besucherdaten
 
 ## Änderungen
+
+Version **1.0.3** behebt PHP-8.4-Deprecations bei der URL-Ermittlung und bei der Normalisierung explizit übergebener URL-Protokolle.
 
 Version **1.0.2** ergänzt die englische Übersetzung und die deutsch-/englischsprachige Dokumentation. Sie korrigiert das Regex-Backtracking im Ace-Editor und im Select2-Regressionstest, sichert die CSS-Worker-Verarbeitung ab und vervollständigt das Select2-Escaping. Die Übersetzungsheader wurden korrigiert und gezielte Regressionstests ergänzt. Das Änderungsprotokoll steht in [readme.txt](./readme.txt).
 

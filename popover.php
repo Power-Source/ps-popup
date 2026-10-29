@@ -4,7 +4,7 @@
  * Plugin Name: PS Popup
  * Plugin URI:  https://psource.eimen.net/psource/ps-popup/
  * Description: Ermöglicht es Besuchern auf der ganzen Webseite ein ausgefallenes PopUp anzuzeigen. Eine *sehr* effektive Art, eine Mailingliste, ein Sonderangebot oder eine einfache alte Anzeige zu bewerben.
- * Version:     1.0.2
+ * Version:     1.0.3
  * Author:      PSOURCE
  * Author URI:  https://psource.eimen.net/
  * Text Domain: popover

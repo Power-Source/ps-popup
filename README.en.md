@@ -2,9 +2,9 @@
 
 [Deutsch](README.md) | **English**
 
-[![Version](https://img.shields.io/badge/Version-1.0.2-2271b1?style=flat-square)](readme.txt)
+[![Version](https://img.shields.io/badge/Version-1.0.3-2271b1?style=flat-square)](readme.txt)
 ![PHP](https://img.shields.io/badge/PHP-8.0%2B-777bb4?style=flat-square&logo=php&logoColor=white)
-![WordPress](https://img.shields.io/badge/WordPress-up%20to%207.1.0-21759b?style=flat-square&logo=wordpress&logoColor=white)
+![WordPress](https://img.shields.io/badge/WordPress-up%20to%207.1.4-21759b?style=flat-square&logo=wordpress&logoColor=white)
 ![ClassicPress](https://img.shields.io/badge/ClassicPress-2.7.4-03768e?style=flat-square)
 [![License](https://img.shields.io/badge/License-GPL--2.0--or--later-2ea44f?style=flat-square)](https://www.gnu.org/licenses/gpl-2.0.html)
 
@@ -204,6 +204,8 @@ Bug reports and suggestions are welcome through [GitHub Issues](https://github.c
 - Relevant error messages, without credentials or visitors' personal data
 
 ## Changes
+
+Version **1.0.3** fixes PHP 8.4 deprecations in current-URL detection and explicit URL protocol normalization.
 
 Version **1.0.2** adds the English translation and documentation in German and English. It fixes regex backtracking in the Ace editor and the Select2 regression test, hardens CSS worker handling, and completes Select2 escaping. Translation headers have been corrected and focused regression tests added. See [readme.txt](./readme.txt) for the changelog.
 
